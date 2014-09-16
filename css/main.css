@@ -1,0 +1,318 @@
+/*************************************
+  GENERAL
+*************************************/
+
+html,
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.827em;
+}
+
+h2 {
+  font-size: 1.999em;
+}
+
+h3 {
+  font-size: 1.414em;
+}
+
+a {
+  color: #cf6557;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #ecb2a6;
+  text-decoration: none;
+}
+
+.spacer {
+  border: 2px solid #cf6557;
+  margin: 34px auto 34px;
+  width: 6.236em;
+}
+
+button {
+  font-weight: 600;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+}
+
+button[type="button"]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/*************************************
+  NAVBAR
+*************************************/
+#nav {
+  background-color: rgba(186,219,210,.95);
+  border: 0;
+  margin: 0;
+}
+
+.navbar,
+.navbar-header,
+.navbar-brand,
+.nav-link, {
+  height: 70px;
+  margin: 0;
+}
+
+.navbar-brand {
+  line-height: 40px;
+  font-family: 'Lobster', cursive;
+  font-size: 1.618em;
+}
+
+.navbar-nav {
+  margin: 0 -15px;
+}
+
+.navbar-nav li a {
+  padding: 15px;
+  line-height: 40px;
+  height: 70px;
+}
+
+.navbar-toggle {
+  background-color: #fff;
+  border-color: #98cabc !important;
+  margin: 15px 15px;
+}
+
+/*************************************
+  LANDING PAGE
+*************************************/
+
+.landing {
+  background: #fff url('../img/wowbg.jpg') no-repeat fixed 0% 40%;
+  /*http://www.bicsup.com/gallery/wallpapers,23.html*/
+  background-size: cover;
+  height: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+.landing .overlay {
+  background: url('../img/diagonal-pattern.png') repeat fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.landing .container {
+  color: #fff;
+  height: 85%;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -22%;
+}
+
+.landing h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 7.993em;
+  color: #fff;
+  margin: 0;
+  text-shadow: 2px 2px 10px #000;
+}
+
+.landing h3 {
+  font-size: 2.827em;
+  font-variant: small-caps;
+  margin: 0;
+}
+
+.landing .intro {
+  margin: 0 auto;
+  width: 50%;
+}
+
+#intro-tagline {
+  font-size: 1.414em;
+}
+
+#intro-desc {
+  font-size: 1em;
+  display: none;
+}
+
+#intro-btn {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: rgba(255,255,255,.3);
+  margin-top: 40px;
+  width: 250px;
+  text-transform: uppercase;
+}
+
+#intro-btn:hover {
+  letter-spacing: 5px;
+  border: 2px solid #000;
+  color: #000;
+}
+
+/*************************************
+  SECTIONS
+*************************************/
+
+.section {
+  padding: 70px 0;
+}
+
+/*.section:nth-child(even) {
+  background-color: #ded3bd;
+}*/
+
+.section .header {
+  margin: 0 -15px 0;
+}
+
+.section .header h1 {
+  font-weight: 400;
+  margin: 0;
+  line-height: 55px;
+  text-transform: uppercase;
+}
+
+.section .header h2 {
+  font-weight: 300;
+  margin: 0;
+  line-height: 35px;
+}
+
+.section h2 {
+  margin: 35px 0 35px;
+}
+
+.section .description {
+  font-size: 1.414em;
+  font-weight: 300;
+}
+
+.section .table-responsive {
+  background-color: #fff;
+  margin-bottom: 35px;
+}
+
+.section .table-responsive:last-child {
+  margin-bottom: 0;
+}
+
+/*************************************
+  SECTION: ROSWELL
+*************************************/
+
+#roswell-register {
+  margin-left: 35px;
+}
+
+#roswell-register span {
+  color: #333;
+  padding-left: 5px;
+}
+
+/*************************************
+  SECTION: SHOOT THE HOOCH
+*************************************/
+
+#rental-classes #rental-table {
+  margin: 0;
+}
+
+#rental-classes ul {
+  margin: 0 0 35px;
+}
+
+/*************************************
+  SECTION: CHATTAHOOCHEE NATURE CENTER
+*************************************/
+
+#nature-center h1 {
+  line-height: 90px;
+}
+
+#nature-center .list-group {
+  margin: 10px 0 0;
+}
+
+/*************************************
+  SECTION: INSTRUCTOR
+*************************************/
+
+#instructor h1 {
+  margin: 0 0 35px 0;
+}
+
+#nature-center .list-group {
+  margin: 10px 0 0;
+}
+
+/*************************************
+  FOOTER
+*************************************/
+
+.footer {
+  color: #fff;
+  background-color: #57524e;
+  padding: 70px 0 0;
+}
+
+.footer h2 {
+  color: #fff;
+  margin: 0 auto 60px;
+}
+
+.company-logo {
+  margin: 10px;
+}
+
+#copyright {
+  margin: 70px 0 35px;
+  text-align: center;
+}
+
+/*************************************
+  BACK TO TOP
+*************************************/
+
+.back-to-top {
+  display: none;
+  border-radius: 100%;
+  background-color: #000;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  opacity: .3;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+
+
+  z-index: 9999;
+}
+
+.back-to-top:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.glyphicon-chevron-up {
+  font-size: 20px;
+  color: #fff;
+  line-height: 49px;
+}
