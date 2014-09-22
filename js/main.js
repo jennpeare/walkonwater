@@ -14,8 +14,8 @@ $(function() {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        if (this.hash == "#parks-rec") {
-          $('#parks-rec').css("padding-top", "70px");
+        if (this.hash == "#about-us") {
+          $('#about-us').css("padding-top", "70px");
           $('html,body').animate({ scrollTop: (target.offset().top)+1}, 1000);
         } else {
           $('html,body').animate({ scrollTop: (target.offset().top)-navbarHeight }, 1000);
@@ -32,17 +32,24 @@ $('.back-to-top').click(function() {
   return false;
 });
 
-// scroll transitions
 $(window).scroll(function() {
+
+  // parallax
+  var bg = document.getElementById("bg");
+  var speed = 3;
+  var yOffset = window.pageYOffset;
+  bg.style.backgroundPosition = "0px "+ (yOffset / speed) * -1 + "px";
+
+  // scroll transitions
   if($(this).scrollTop() > windowHeight){
     $('#nav').addClass("navbar-fixed-top");
     $('#nav').removeClass("navbar-static-top");
-    $('#parks-rec').css("padding-top", "140px");
+    $('#about-us').css("padding-top", "140px");
     $('.back-to-top').fadeIn();
   } else {
     $('#nav').addClass("navbar-static-top");
     $('#nav').removeClass("navbar-fixed-top");
-    $('#parks-rec').css("padding-top", "70px");
+    $('#about-us').css("padding-top", "70px");
     $('.back-to-top').fadeOut();
   }
   return false;

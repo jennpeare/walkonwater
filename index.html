@@ -13,6 +13,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/flaticon.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -23,23 +24,17 @@
 
 <body>
   <!-- LANDING PAGE -->
-  <div class="landing">
+  <div class="landing" id="bg">
     <div class="overlay">
       <div class="container">
-        <img src="img/logo.png" width="150">
-        <h1 class="title">Walk on Water</h1>
-        <h3>Standup Paddle Boarding</h3>
+        <img src="img/logo-inverse.png" width="150">
+        <p id="landing-title">Walk on Water</p>
+        <p id="landing-subtitle">Standup Paddle Boarding</p>
 
-        <hr class="spacer"></hr>
+        <div class="spacer"></div>
 
-        <div class="intro">
-          <p id="intro-tagline">WoW was established in May of 2011. We brought Standup Paddleboarding to Roswell and the Chattahoochee.</p>
-          <p id="intro-desc">
-            In partnership with <a href="http://www.shootthehooch.com/" target="_blank">Shoot the Hooch</a> for all your rental needs.<br>
-            Class series available through <a href="http://www.roswellgov.com/index.aspx?nid=104" target="_blank">Roswell Parks and Recreation</a><br>
-            Nature series available through <a href="http://chattnaturecenter.org/" target="_blank">Chattahoochee Nature Center</a><br>
-            Follow Brian on Facebook! Facebook (icon)
-          </p>
+        <div class="landing-intro">
+          <p id="intro-tagline">We bring Standup Paddleboarding to Roswell and the Chattahoochee.</p>
           <button type="button" id="intro-btn" class="btn btn-lg">Let's Go!</button>
         </div>
       </div>
@@ -56,432 +51,305 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <!-- <a class="navbar-brand" href="#"><img src="img/logo.png" width="50" class="img-responsive"></a> -->
         <a class="navbar-brand" href="#">Walk on Water</a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
+          <li class="nav-link"><a href="#about-us">About Us</a></li>
           <li class="nav-link"><a href="#parks-rec">Roswell Parks &amp; Recreation</a></li>
-          <li class="nav-link"><a href="#rental-classes">Rentals &amp; Classes</a></li>
+          <!-- <li class="nav-link"><a href="#rental-classes">Rentals &amp; Classes</a></li> -->
           <li class="nav-link"><a href="#nature-center">Chattahoochee Nature Center</a></li>
           <li class="nav-link"><a href="#instructor">Our Instructor</a></li>
+          <li class="nav-link"><a href="https://www.facebook.com/walkonwateradventures" target="_blank"><span class="flaticon-facebook24"></span></a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </nav>
 
+  <!-- ABOUT US -->
+  <div class="section" id="about-us">
+    <div class="container">
+
+      <div class="header">
+        <h1 class="section-header">Walk on Water</h1>
+        <div class="spacer"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Who we are</h2>
+          <div class="description">
+            <p>Walk on Water was established in May of 2011.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec mollis purus. Curabitur congue feugiat sollicitudin. Donec lacinia at dui volutpat venenatis. Fusce quis velit leo. Aenean enim urna, convallis ut condimentum condimentum, tristique eu erat. Sed pharetra sollicitudin consectetur. Fusce at nunc ipsum. Nulla semper mollis condimentum. Morbi eget congue urna, et sollicitudin tellus.</p>
+          </div>
+
+          <h2>Our Classes</h2>
+          <div class="description">
+            <p>
+              Class series available through <a href="http://www.roswellgov.com/index.aspx?nid=104" target="_blank">Roswell Parks and Recreation</a><br>
+              Nature series available through <a href="http://chattnaturecenter.org/" target="_blank">Chattahoochee Nature Center</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+          <img src="img/about-us-img.jpg" class="img-responsive postcard">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   <!-- ROSWELL PARKS & RECREATION -->
   <div class="section" id="parks-rec">
     <div class="container">
 
-      <div class="row header">
-        <div class="col-md-8">
-          <h1>Roswell Parks &amp; Recreation</h1>
-          <h2>SUP Class Series</h2>
-        </div>
-        <div class="col-md-4 text-right"><img src="img/roswell-logo.jpg" height="90"></div>
+      <div class="header">
+        <h1 class="section-header">Roswell Parks &amp; Recreation</h1>
+        <div class="spacer"></div>
       </div>
 
-      <hr class="spacer"></hr>
+      <div class="row">
+        <div class="col-md-5">
+          <img src="img/class.jpg" class="img-responsive postcard">
+        </div>
+        <div class="col-md-6 col-md-offset-1">
+          <h2>Welcome to Roswell</h2>
+          <div class="description">
+            <p>[General description of Roswell Parks and the class offerings]</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec mollis purus. Curabitur congue feugiat sollicitudin. Donec lacinia at dui volutpat venenatis. Fusce quis velit leo. Aenean enim urna, convallis ut condimentum condimentum, tristique eu erat. Sed pharetra sollicitudin consectetur. Fusce at nunc ipsum. Nulla semper mollis condimentum. Morbi eget congue urna, et sollicitudin tellus.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer"></div>
+
+      <h2>SUP Class Series: Spring 2015</h2>
+      <div class="description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec mollis purus. Curabitur congue feugiat sollicitudin. Donec lacinia at dui volutpat venenatis. Fusce quis velit leo. Aenean enim urna, convallis ut condimentum condimentum, tristique eu erat. Sed pharetra sollicitudin consectetur. Fusce at nunc ipsum. Nulla semper mollis condimentum. Morbi eget congue urna, et sollicitudin tellus.</p>
+      </div>
+
+      <h3>Registration</h3>
+      <p>To sign up for any of our SUP series, please visit Roswell Recreation &amp; Park's online registration system. You may also contact Roswell Recreation &amp; Park at <a href="mailto:recweb@roswellgov.com">recweb@roswellgov.com</a> or call <a href="tel:770-641-3705">770-641-3705</a> for any questions regarding online registration. <a href="http://www.roswellgov.com/index.aspx?NID=510" target="_blank"><button type="button" class="btn btn-default btn-sm register" id="roswell-register">More Information &raquo;</button></a></p>
 
       <div class="row">
         <div class="col-md-4">
-          <img src="img/covered-bridge.jpg" alt="Old Mill Bridge" width="300">
+          <div class="class-group">
+            <p class="class-heading">Adult Stand up Paddle Boarding 101</p>
+            <p class="class-desc">Intro to stand up paddle boarding on Chattahoochee River teaches proper paddling technique and how to control the board on the water. Come out and experience this fantastic new way to explore our river.</p>
+            <ul class="class-info">
+              <li class="clearfix">
+                <span class="glyphicon glyphicon-calendar pull-left"></span>
+                <span class="pull-left">
+                  <p><strong>39532-02</strong><br/>Saturday: 5/2 - 5/23 @ 11:15am-12:15pm</p>
+                  <p><strong>39532-04</strong><br/>Monday: 5/4 - 5/23 @ 11:15am-12:15pm</p>
+                  <p><strong>39532-05</strong><br/>Wednesday: 5/7 - 5/28 @ 6-7pm</p>
+                </span>
+              </li>
+              <li class="clearfix">
+                <span class="glyphicon glyphicon-usd pull-left"></span>
+                <span class="pull-left">
+                  <p>Residents: $96<br>
+                    Non-Residents: $144
+                  </p>
+                </span>
+              </li>
+              <li class="clearfix">
+                <span class="glyphicon glyphicon-check pull-left"></span>
+                <a href="https://webtrac.ci.roswell.ga.us/wbwsc/webtrac.wsc/wbsplash.html?wbp=1" target="_blank"><button type="button" class="btn btn-default pull-left">Register</button></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-8 description">
-          <p>[General description of Roswell Parks and the class offerings]</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec mollis purus. Curabitur congue feugiat sollicitudin. Donec lacinia at dui volutpat venenatis. Fusce quis velit leo. Aenean enim urna, convallis ut condimentum condimentum, tristique eu erat. Sed pharetra sollicitudin consectetur. Fusce at nunc ipsum. Nulla semper mollis condimentum. Morbi eget congue urna, et sollicitudin tellus.</p>
-        </div>
-      </div>
 
-      <hr class="spacer"></hr>
-
-      <h2>Fall 2014 Class Schedule
-        <a href="https://webtrac.ci.roswell.ga.us/wbwsc/webtrac.wsc/wbsplash.html" target="_blank">
-          <button type="button" class="btn btn-default" id="roswell-register">
-            Roswell Class Registration <span class="glyphicon glyphicon-new-window"></span>
-          </button>
-        </a>
-      </h2>
-
-      <h3>19532 - Teen Stand Up Paddle Boarding</h3>
-      <div class="table-responsive">
-        <table class="table table-striped">
-          <thead>
-            <th>Activity</th>
-            <th>Description</th>
-            <th>Dates</th>
-            <th>Times</th>
-            <th>Days</th>
-            <th>Location</th>
-            <th>Ages</th>
-            <th>Fees</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>19532-01</td>
-              <td>Teen Paddleboard 101</td>
-              <td>08/23/14 - 09/13/14</td>
-              <td>9:00A - 10:00A</td>
-              <td>Sa</td>
-              <td>Azalea Park</td>
-              <td>11 years to under 18 years</td>
-              <td>$96/$144</td>
-              <td><span class="glyphicon glyphicon-user"></span></td>
-              <td><span class="glyphicon glyphicon-shopping-cart"></span></td>
-              <td><span class="label label-success">Available</span></td>
-              <td><span class="glyphicon glyphicon-share"></span></td>
-            </tr>
-            <tr>
-              <td>19532-01</td>
-              <td>Teen Paddleboard 101</td>
-              <td>08/23/14 - 09/13/14</td>
-              <td>9:00A - 10:00A</td>
-              <td>Sa</td>
-              <td>Azalea Park</td>
-              <td>11 years to under 18 years</td>
-              <td>$96/$144</td>
-              <td><span class="glyphicon glyphicon-user"></span></td>
-              <td><span class="glyphicon glyphicon-shopping-cart"></span></td>
-              <td><span class="label label-success">Available</span></td>
-              <td><span class="glyphicon glyphicon-share"></span></td>
-            </tr>
-            <tr>
-              <td>19532-01</td>
-              <td>Teen Paddleboard 101</td>
-              <td>08/23/14 - 09/13/14</td>
-              <td>9:00A - 10:00A</td>
-              <td>Sa</td>
-              <td>Azalea Park</td>
-              <td>11 years to under 18 years</td>
-              <td>$96/$144</td>
-              <td><span class="glyphicon glyphicon-user"></span></td>
-              <td><span class="glyphicon glyphicon-shopping-cart"></span></td>
-              <td><span class="label label-danger">Unavailable</span></td>
-              <td><span class="glyphicon glyphicon-share"></span></td>
-            </tr>
-            <tr>
-              <td>19532-01</td>
-              <td>Teen Paddleboard 101</td>
-              <td>08/23/14 - 09/13/14</td>
-              <td>9:00A - 10:00A</td>
-              <td>Sa</td>
-              <td>Azalea Park</td>
-              <td>11 years to under 18 years</td>
-              <td>$96/$144</td>
-              <td><span class="glyphicon glyphicon-user"></span></td>
-              <td><span class="glyphicon glyphicon-shopping-cart"></span></td>
-              <td><span class="label label-success">Available</span></td>
-              <td><span class="glyphicon glyphicon-share"></span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>19533 - Stand Up Paddle Fitness</h3>
-      <div class="table-responsive">
-        <table class="table table-striped">
-          <thead>
-            <th>Activity</th>
-            <th>Description</th>
-            <th>Dates</th>
-            <th>Times</th>
-            <th>Days</th>
-            <th>Location</th>
-            <th>Ages</th>
-            <th>Fees</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>19532-01</td>
-              <td>Teen Paddleboard 101</td>
-              <td>08/23/14 - 09/13/14</td>
-              <td>9:00A - 10:00A</td>
-              <td>Sa</td>
-              <td>Azalea Park</td>
-              <td>11 years to under 18 years</td>
-              <td>$96/$144</td>
-              <td><span class="glyphicon glyphicon-user"></span></td>
-              <td><span class="glyphicon glyphicon-shopping-cart"></span></td>
-              <td><span class="label label-success">Available</span></td>
-              <td><span class="glyphicon glyphicon-share"></span></td>
-            </tr>
-            <tr>
-              <td>19532-01</td>
-              <td>Teen Paddleboard 101</td>
-              <td>08/23/14 - 09/13/14</td>
-              <td>9:00A - 10:00A</td>
-              <td>Sa</td>
-              <td>Azalea Park</td>
-              <td>11 years to under 18 years</td>
-              <td>$96/$144</td>
-              <td><span class="glyphicon glyphicon-user"></span></td>
-              <td><span class="glyphicon glyphicon-shopping-cart"></span></td>
-              <td><span class="label label-success">Available</span></td>
-              <td><span class="glyphicon glyphicon-share"></span></td>
-            </tr>
-            <tr>
-              <td>19532-01</td>
-              <td>Teen Paddleboard 101</td>
-              <td>08/23/14 - 09/13/14</td>
-              <td>9:00A - 10:00A</td>
-              <td>Sa</td>
-              <td>Azalea Park</td>
-              <td>11 years to under 18 years</td>
-              <td>$96/$144</td>
-              <td><span class="glyphicon glyphicon-user"></span></td>
-              <td><span class="glyphicon glyphicon-shopping-cart"></span></td>
-              <td><span class="label label-danger">Unavailable</span></td>
-              <td><span class="glyphicon glyphicon-share"></span></td>
-            </tr>
-            <tr>
-              <td>19532-01</td>
-              <td>Teen Paddleboard 101</td>
-              <td>08/23/14 - 09/13/14</td>
-              <td>9:00A - 10:00A</td>
-              <td>Sa</td>
-              <td>Azalea Park</td>
-              <td>11 years to under 18 years</td>
-              <td>$96/$144</td>
-              <td><span class="glyphicon glyphicon-user"></span></td>
-              <td><span class="glyphicon glyphicon-shopping-cart"></span></td>
-              <td><span class="label label-success">Available</span></td>
-              <td><span class="glyphicon glyphicon-share"></span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- RENTALS & CLASSES -->
-  <div class="section" id="rental-classes">
-    <div class="container">
-
-      <div class="row header">
-        <div class="col-md-8">
-          <h1>Rentals &amp; Classes</h1>
-          <h2>Instructor Lead SUP Lessons</h2>
-        </div>
-        <div class="col-md-4 text-right"><img src="img/sth-logo.png" height="90"></div>
-      </div>
-
-      <hr class="spacer"></hr>
-
-      <div class="row">
-        <div class="col-md-8 description">
-          <p>We offer a fleet of BIC Standup Paddle Boards through Shoot the Hooch at Roswell's Azalea Park, located at 203 Azalea Drive, Roswell, Georgia.</p>
-          <p>In addition to standup paddle boards, Shoot the Hooch is the premier rental outfitters right on the Chattahoochee River offering raft, canoe, kayak, tube rentals.</p>
-          <p>Stand up paddle boarding (SUP) is a great way to get out and enjoy the gentle current of the Chattahoochee River. Open to all experience levels, SUP is an amazing full-body workout that is quickly growing in popularity.</p>
-
-          <p>We offer hourly and full day paddle board rentals from our Azalea Park location 7 days/week June through August and Weekends during May, September, and October. We also offer a variety of lessons, including a SUP 101 class for beginners and a SUP yoga class for those looking for a fun and relaxing way to get a workout.</p>
-        </div>
-        <div class="col-md-4 text-right">
-          <img src="http://ecx.images-amazon.com/images/I/71-xLqVZPCL._SL1500_.jpg" alt="Paddleboard" height="350">
-          <!-- http://www.amazon.com/b?node=3204434011 -->
-        </div>
-      </div>
-
-      <hr class="spacer"></hr>
-
-      <h2>SUP Rental Pricing</h2>
-
-      <div class="table-responsive" id="rental-table">
-        <table class="table table-striped">
-          <thead>
-            <th>Board Type</th>
-            <th>1 Hour Rental</th>
-            <th>2 Hour Rental</th>
-            <th>All Day/Trip</th>
-          </thead>
-          <tbody>
-            <tr>
-              <th>Regular</th>
-              <td>$25</td>
-              <td>$40</td>
-              <td>$55</td>
-            </tr>
-            <tr>
-              <th>Race</th>
-              <td>$30</td>
-              <td>$45</td>
-              <td>$60</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <ul>
-        <li>Includes board, life jacket, and paddle.</li>
-        <li>Classes are $10 if you bring your own equipment.</li>
-        <li>There is a $1 per person National Park Service Fee for each rental</li>
-        <li>Must be at least 9 years old to paddle board.</li>
-      </ul>
-
-      <h2>Classes</h2>
-
-      <ul class="list-group">
-        <li class="list-group-item">SUP 101 - $30</li>
-        <li class="list-group-item">Private Lesson - $60</li>
-      </ul>
-
-      <div class="table-responsive">
-        <table class="table table-striped">
-          <thead>
-            <th>Day</th>
-            <th>Time</th>
-            <th>Class Type</th>
-            <th>Min # People</th>
-            <th>Max # People</th>
-          </thead>
-          <tbody>
-            <tr>
-              <th>Monday</th>
-              <td>1 Hr</td>
-              <td>SUP School</td>
-              <td>3</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <th>Tuesday</th>
-              <td>1 Hr</td>
-              <td>SUP School</td>
-              <td>3</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <th>Wednesday</th>
-              <td>1 Hr</td>
-              <td>SUP School</td>
-              <td>3</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <th>Friday</th>
-              <td>1 Hr</td>
-              <td>Evening River Cruise</td>
-              <td>3</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <th>Saturday</th>
-              <td>1 Hr</td>
-              <td>SUP School</td>
-              <td>3</td>
-              <td>8</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>SUP School</h3>
-      <p>Starting out with our beginners SUP class gives you a solid foundation of all the basics to paddle correctly and safely.  This one hour class is designed to get ages 11-70+ out on the water.  Wide, stable boards are provided to get you standing and paddling the river in no time at all.</p>
-
-      <p>Note: To receive a refund on a cancellation, we must be notified 14 days prior to the class reservation date, otherwise you will be given a raincheck. If your trip is cancelled or cut short due to weather or river conditions, you will be given a rain-check for a later date.</p>
-
-    </div>
-  </div>
-
-  <div class="section" id="nature-center">
-    <div class="container">
-
-      <div class="row header">
-        <div class="col-md-8">
-          <h1>Chattahoochee Nature Center</h1>
-        </div>
-        <div class="col-md-4 text-right"><img src="img/nature-center-logo.jpg" height="90"></div>
-      </div>
-
-      <hr class="spacer"></hr>
-
-      <div class="row">
         <div class="col-md-4">
-          <img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/15790_10152654652957973_5517504873057727294_n.jpg?oh=058ea86f28571478b4ef1a5220c4081b&oe=549CD79A&__gda__=1418485927_7b1f601bb945a259610b95c4848415cf" alt="Chattahoochee River" width="300">
-        </div>
-        <div class="col-md-8 description">
-          <p>[General description of nature center here]</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id lobortis sapien. Vestibulum sit amet pharetra mi. Phasellus malesuada nec tellus quis semper. Donec ullamcorper non nibh at pharetra. Pellentesque mattis rhoncus feugiat. Donec velit orci, tincidunt ut vulputate ut, ornare nec orci. Nulla id neque vel erat ultrices ornare id sed metus. Mauris lobortis malesuada venenatis. Suspendisse potenti. Duis a lacus non tellus mollis luctus et vel tortor.</p>
-        </div>
-      </div>
+          <div class="class-group">
+            <p class="class-heading">Teen Stand up Paddle Boarding 101</p>
+            <p class="class-desc">Bring your friends and enjoy the beauty of the river in a totally different way. Learn all of the techniques to be able to paddleboard on the hooch while having a blast. Use of equipment included. Ages 11-17 on the date of the class. Held at the Azalea Boat Launch.</p>
+            <ul class="class-info">
+              <li class="clearfix">
+                <span class="glyphicon glyphicon-calendar pull-left"></span>
+                <span class="pull-left">
+                  <p><strong>39533-01</strong><br/>Saturday: 5/2 - 5/23 @ 10-11am</p>
+                </span>
+              </li>
+              <li class="clearfix">
+                <span class="glyphicon glyphicon-usd pull-left"></span>
+                <span class="pull-left">
+                  <p>Residents: $25<br>
+                    Non-Residents: $144</p>
+                  </span>
+                </li>
+                <li class="clearfix">
+                  <span class="glyphicon glyphicon-check pull-left"></span>
+                  <a href="https://webtrac.ci.roswell.ga.us/wbwsc/webtrac.wsc/wbsplash.html?wbp=1" target="_blank"><button type="button" class="btn btn-default pull-left">Register</button></a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-      <hr class="spacer"></hr>
+          <div class="col-md-4">
+            <div class="class-group">
+              <p class="class-heading">Stand Up Paddleboard Fitness</p>
+              <p class="class-desc">Mix up your fitness routine by taking it out onto the water.  Strength training, yoga poses and core exercises are combined together while stand up paddle boarding on the Chattahoochee River.</p>
+              <ul class="class-info">
+                <li class="clearfix">
+                  <span class="glyphicon glyphicon-calendar pull-left"></span>
+                  <span class="pull-left">
+                    <p><strong>39533-02</strong><br/>Monday: 5/4 - 5/23 @ 10-11am</p>
+                    <p><strong>39533-03</strong><br/>Thursday: 5/7 - 5/28 @ 6-7pm</p>
+                  </span>
+                </li>
+                <li class="clearfix">
+                  <span class="glyphicon glyphicon-usd pull-left"></span>
+                  <span class="pull-left">
+                    <p>Residents: $96<br>
+                      Non-Residents: $144</p>
+                    </span>
+                  </li>
+                  <li class="clearfix">
+                    <span class="glyphicon glyphicon-check pull-left"></span>
+                    <a href="https://webtrac.ci.roswell.ga.us/wbwsc/webtrac.wsc/wbsplash.html?wbp=1" target="_blank"><button type="button" class="btn btn-default pull-left">Register</button></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-      <h2>Paddleboard Schedule</h2>
-      <p>For quickest registration or to check availability of a program, please visit  our on-line registration center. You may also email our scheduling department at scheduling@chattnaturecenter.org or call 770-992-2055 x237.</p>
-
-      <h3>Stand-up Paddleboarding SUP School</h3>
-      <p>Now is your chance to pick-up a new way to experience the Chattahoochee.  Brian Burdett with Walk on Water Adventures, LLC helps those new to paddleboarding (and those who just want to practice) learn the basics of stand-up paddleboarding.  This class will teach entering and exiting the water safely plus correct paddling techniques. Come out and try this fun and exciting way to enjoy our beautiful water ways. Paddle board, paddle and PFD will be provided. $25 General Public; $20 CNC Members; Ages 10 – Adult; Registration required the Monday before each session.</p>
-      <ul class="list-group">
-        <li class="list-group-item">Sep 10th, 2014 (Wed)		6:30 PM - 7:30 PM</li>
-        <li class="list-group-item">Sep 3rd, 2014 (Wed)		  6:30 PM - 7:30 PM</li>
-        <li class="list-group-item">Sep 17th, 2014 (Wed)		5:00 PM - 6:00 PM</li>
-        <li class="list-group-item">Sep 17th, 2014 (Wed)		6:30 PM - 7:30 PM</li>
-        <li class="list-group-item">Sep 24th, 2014 (Wed)		5:00 PM - 6:00 PM</li>
-      </ul>
-
-    </div>
-  </div>
-
-  <div class="section" id="instructor">
-    <div class="container">
-      <h1>Our Instructor</h1>
-
-      <div class="row">
-        <div class="col-md-2 text-center">
-          <img src="http://placehold.it/200x200" alt="Briant Burdett" class="img-circle">
-        </div>
-        <div class="col-md-9 col-md-offset-1">
-          <h3>Brian Burdett</h3>
-          <p>The coolest paddleboarder this side of the Chattahoochee! Brian has been into watersports his entire life and fell in love with standup paddleboarding when it hit the surf community a few short years ago. The idea of bringing paddling boarding to the Chattahoochee was actually born from a trip to Belize.</p>
-
-          <p>Brian is a certified Yoga instructor and certified PaddleFit instructor…. [Need to write more here]</p>
-
-          <p>[Brian's contact Info - cell/email]</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="footer">
-    <div class="container">
-
-      <h2 class="text-center">Come paddleboard with us!</h2>
-
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <img class="company-logo img-rounded" src="http://placehold.it/150x100">
-          <img class="company-logo img-rounded" src="http://placehold.it/150x100">
-          <img class="company-logo img-rounded" src="http://placehold.it/150x100">
-          <img class="company-logo img-rounded" src="http://placehold.it/150x100">
-          <img class="company-logo img-rounded" src="http://placehold.it/150x100">
-          <img class="company-logo img-rounded" src="http://placehold.it/150x100">
         </div>
       </div>
-      <div id="copyright">&copy; 2014 Walk on Water Adventures, LLC. All rights reserved.</div>
-    </div>
-  </div>
 
-  <div class="back-to-top">
-    <a href="#top"><span class="glyphicon glyphicon-chevron-up"></span></a>
-  </div>
+      <!-- CHATTAHOOCHEE NATURE CENTER -->
+      <div class="section" id="nature-center">
+        <div class="container">
 
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+          <div class="header">
+            <h1 class="section-header">Chattahoochee Nature Center</h1>
+            <div class="spacer"></div>
+          </div>
 
-</body>
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Welcome to the Chattahoochee</h2>
+              <div class="description">
+                <p>[General description of nature center here]</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id lobortis sapien. Vestibulum sit amet pharetra mi. Phasellus malesuada nec tellus quis semper. Donec ullamcorper non nibh at pharetra. Pellentesque mattis rhoncus feugiat. Donec velit orci, tincidunt ut vulputate ut, ornare nec orci. Nulla id neque vel erat ultrices ornare id sed metus. Mauris lobortis malesuada venenatis. Suspendisse potenti. Duis a lacus non tellus mollis luctus et vel tortor.</p>
+              </div>
+            </div>
 
-</html>
+            <div class="col-md-5 col-md-offset-1">
+              <img src="img/chattahoochee.jpg" class="img-responsive postcard">
+            </div>
+          </div>
+
+          <div class="spacer"></div>
+
+          <div class="row">
+            <div class="col-md-7">
+              <h2>Stand-up Paddleboarding SUP School</h2>
+              <div class="description">
+                <p>Now is your chance to pick-up a new way to experience the Chattahoochee.  Brian Burdett with Walk on Water Adventures, LLC helps those new to paddleboarding (and those who just want to practice) learn the basics of stand-up paddleboarding.  This class will teach entering and exiting the water safely plus correct paddling techniques. Come out and try this fun and exciting way to enjoy our beautiful water ways. Paddle board, paddle and PFD will be provided.</p>
+              </div>
+
+              <h3>Registration</h3>
+              <p>Registration is required the Monday before each session. For quickest registration or to check availability of a program, please visit our online registration center. You may also email our scheduling department at <a href="mailto:scheduling@chattnaturecenter.org">scheduling@chattnaturecenter.org</a> or call <a href="tel:770-992-2055,237">770-992-2055 x237</a>.</p>
+            </div>
+            <div class="col-md-4 col-md-offset-1">
+              <div class="class-group">
+                <p class="class-heading">Stand-up Paddleboarding 101</p>
+                <ul class="class-info">
+                  <li class="clearfix">
+                    <span class="glyphicon glyphicon-calendar pull-left"></span>
+                    <span class="pull-left">
+                      <p>Wednesday: 9/3 @ 6:30-7:30pm</p>
+                      <p>Wednesday: 9/10 @ 6:30-7:30pm</p>
+                      <p>Wednesday: 9/17 @ 5-6pm</p>
+                      <p>Wednesday: 9/17 @ 6:30-7:30pm</p>
+                      <p>Wednesday: 9/24 @ 5-6pm</p>
+                    </span>
+                  </li>
+                  <li class="clearfix">
+                    <span class="glyphicon glyphicon-user pull-left"></span>
+                    <span class="pull-left">
+                      <p>Ages 10 – Adult</p>
+                    </span>
+                  </li>
+                  <li class="clearfix">
+                    <span class="glyphicon glyphicon-usd pull-left"></span>
+                    <span class="pull-left">
+                      <p>General Public: $25<br>
+                        CNC Members: $20</p>
+                      </span>
+                    </li>
+                    <li class="clearfix">
+                      <span class="glyphicon glyphicon-check pull-left"></span>
+                      <a href="https://ecommerce.chattnaturecenter.org/itemList.aspx?node_id=15505" target="_blank"><button type="button" class="btn btn-default pull-left" id="roswell-register">Register</button></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section" id="instructor">
+          <div class="container">
+            <div class="header">
+              <h1 class="section-header">Our Instructor</h1>
+              <div class="spacer"></div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3 text-center">
+                <img src="http://placehold.it/250x250" alt="Briant Burdett" class="img-circle">
+              </div>
+              <div class="col-md-9">
+                <h2>Brian Burdett</h2>
+                <div class="description">
+                  <p>The coolest paddleboarder this side of the Chattahoochee! Brian has been into watersports his entire life and fell in love with standup paddleboarding when it hit the surf community a few short years ago. The idea of bringing paddling boarding to the Chattahoochee was actually born from a trip to Belize.</p>
+                  <p>Brian is a certified Yoga instructor and certified PaddleFit instructor…. [Need to write more here]</p>
+                  <p>[Brian's contact Info - cell/email]</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="overlay">
+          <div class="container">
+
+            <h2 class="footer-header text-center">Come paddleboard with us!</h2>
+
+            <div class="row logos">
+              <div class="col-md-12 text-center">
+                <img class="company-logo img-rounded" src="http://placehold.it/150x100">
+                <img class="company-logo img-rounded" src="http://placehold.it/150x100">
+                <img class="company-logo img-rounded" src="http://placehold.it/150x100">
+                <img class="company-logo img-rounded" src="http://placehold.it/150x100">
+                <img class="company-logo img-rounded" src="http://placehold.it/150x100">
+                <img class="company-logo img-rounded" src="http://placehold.it/150x100">
+              </div>
+            </div>
+            <div id="copyright">
+              &copy; 2014 Walk on Water Adventures, LLC. All rights reserved.<br>
+              <p class="credits">Icons made by Icomoon from <a href="http://www.flaticon.com" target="_blank" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="back-to-top">
+          <a href="#top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+        </div>
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+
+      </body>
+
+      </html>
