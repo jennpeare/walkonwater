@@ -3,5 +3,4 @@
 */.DS_Store
 .sass-cache
 css/*.scss
-css/*.css.map
 tables.html
