@@ -181,7 +181,7 @@ LANDING PAGE
   font-weight: 300; }
   @media screen and (max-width: 480px) {
     .landing-intro {
-      font-size: 1.375em; } }
+      font-size: 1.125em; } }
   .landing-intro button {
     border: 2px solid #fff;
     color: #fff;
