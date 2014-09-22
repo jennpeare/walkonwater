@@ -36,11 +36,12 @@ $('.back-to-top').click(function() {
 $(window).scroll(function() {
 
   // parallax
-  var bg = document.getElementById("bg");
-  var speed = 3;
-  var yOffset = window.pageYOffset;
-  bg.style.backgroundPosition = "0px "+ (yOffset / speed) * -1 + "px";
-
+  if (windowWidth > 768) {
+    var bg = document.getElementById("bg");
+    var speed = 3;
+    var yOffset = window.pageYOffset;
+    bg.style.backgroundPosition = "0px "+ (yOffset / speed) * -1 + "px";
+  }
   // scroll transitions
   if($(this).scrollTop() > windowHeight){
     $('#nav').addClass("navbar-fixed-top");
