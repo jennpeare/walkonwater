@@ -5,7 +5,12 @@ html,
 body {
   height: 100%;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 16px; }
+  @media screen and (max-width: 480px) {
+    html,
+    body {
+      font-size: 14px; } }
 
 p {
   font-size: 1em; }
@@ -13,23 +18,30 @@ p {
 h1 {
   font-size: 3em;
   line-height: 1.05em; }
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 2em;
+      line-height: 1.25em; } }
 
 h2 {
   font-size: 2.25em;
   line-height: 1.25em; }
+  @media screen and (max-width: 480px) {
+    h2 {
+      font-size: 1.625em;
+      line-height: 1.15384615em; } }
 
 h3 {
   font-size: 1.75em;
   line-height: 1.25em; }
-
-h4 {
-  font-size: 1.125em;
-  line-height: 1.22222222em; }
+  @media screen and (max-width: 480px) {
+    h3 {
+      font-size: 1.375em;
+      line-height: 1.13636364em; } }
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   margin: 0; }
 
 a {
@@ -61,6 +73,9 @@ button {
   background-color: #fff;
   padding: 10px;
   box-shadow: 5px 5px 10px #777777; }
+  @media screen and (max-width: 480px) {
+    .postcard {
+      margin: 17.5px 0; } }
 
 /*************************************
 NAVBAR
@@ -79,15 +94,15 @@ NAVBAR
 
 .navbar-brand {
   line-height: 40px;
-  font-family: "Lobster", cursive;
-  font-size: 2.25em; }
+  font-family: "Lobster", cursive; }
 
 .navbar-nav {
   margin: 0 -15px; }
   .navbar-nav li a {
-    padding: 15px;
+    font-size: 0.875em;
+    height: 70px;
     line-height: 40px;
-    height: 70px; }
+    padding: 15px; }
 
 .navbar-toggle {
   background-color: #fff;
@@ -116,21 +131,40 @@ LANDING PAGE
     z-index: 1; }
   .landing .container {
     color: #fff;
-    height: 87%;
+    height: 100%;
     width: 60%;
     position: absolute;
-    top: 6.5%;
+    top: 0%;
     left: 20%;
     padding: 20px 0; }
+    @media screen and (max-width: 480px) {
+      .landing .container {
+        height: 92%;
+        width: 95%;
+        left: 2.5%;
+        top: 4%;
+        padding: 10px 0; } }
   .landing .spacer {
-    margin: 50px auto; }
+    margin: 55px auto; }
+    @media screen and (max-width: 480px) {
+      .landing .spacer {
+        margin: 35px auto; } }
+
+#landing-logo {
+  width: 150px; }
+  @media screen and (max-width: 480px) {
+    #landing-logo {
+      width: 100px; } }
 
 #landing-title {
   font-family: "Lobster", cursive;
   font-size: 6em;
-  line-height: 1.05em;
-  margin: 0;
+  line-height: 1.125em;
+  margin: 17.5px 0 0;
   text-shadow: 2px 2px 10px #000; }
+  @media screen and (max-width: 480px) {
+    #landing-title {
+      font-size: 4.5em; } }
 
 #landing-subtitle {
   font-size: 2.25em;
@@ -138,9 +172,17 @@ LANDING PAGE
   line-height: 1.25em;
   margin: 0;
   text-shadow: 2px 2px 10px #000; }
+  @media screen and (max-width: 480px) {
+    #landing-subtitle {
+      font-size: 1.625em; } }
 
 .landing-intro {
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 1.75em;
+  font-weight: 300; }
+  @media screen and (max-width: 480px) {
+    .landing-intro {
+      font-size: 1.375em; } }
   .landing-intro button {
     border: 2px solid #fff;
     color: #fff;
@@ -153,10 +195,6 @@ LANDING PAGE
       border: 2px solid #000;
       color: #000; }
 
-#intro-tagline {
-  font-size: 1.75em;
-  font-weight: 300; }
-
 /*************************************
 SECTIONS
 *************************************/
@@ -164,19 +202,20 @@ SECTIONS
   padding: 70px 0; }
   .section:nth-child(even) {
     background-color: #eee; }
-  .section .header {
-    max-height: 95px; }
-    .section .header .section-header {
-      font-weight: 300;
-      text-transform: uppercase; }
-    .section .header .spacer {
-      margin: 35px 0; }
   .section h2:not(:first-child),
   .section h3:not(:first-child) {
     margin: 35px 0 17.5px; }
 
-.description {
-  font-size: 1.25em;
+.header {
+  max-height: 95px; }
+  .header .section-header {
+    font-weight: 300;
+    text-transform: uppercase; }
+  .header .spacer {
+    margin: 35px 0; }
+
+.description p {
+  font-size: 1.125em;
   font-weight: 400;
   margin: 17.5px 0 0; }
 
@@ -188,7 +227,7 @@ SECTIONS
   .class-group .class-heading {
     background-color: #badbd2;
     border-radius: 10px 10px 0 0;
-    font-size: 1.25em;
+    font-size: 1.125em;
     font-weight: 600;
     margin: 0;
     padding: 10px;
@@ -196,24 +235,44 @@ SECTIONS
   .class-group .class-desc {
     margin: 0;
     padding: 15px; }
+    @media screen and (max-width: 480px) {
+      .class-group .class-desc {
+        padding: 10px; } }
 
 .class-info {
+  font-size: 0.875em;
   padding: 0;
   margin: 0; }
   .class-info li {
     display: block;
     border-top: 1px solid #eeeeee;
     padding: 15px; }
+    @media screen and (max-width: 480px) {
+      .class-info li {
+        padding: 10px; } }
     .class-info li:last-child {
       border-radius: 0 0 10px 10px; }
     .class-info li span.glyphicon {
-      font-size: 1.75em;
+      font-size: 1.5em;
       margin: 0 15px 0 0; }
+      @media screen and (max-width: 480px) {
+        .class-info li span.glyphicon {
+          font-size: 1.25em;
+          margin: 0 10px 0 0; } }
     .class-info li p {
       line-height: 1.25em;
       margin: 0 0 10px; }
       .class-info li p:last-child {
         margin: 0; }
+
+/*************************************
+SECTIONS: INSTRUCTOR
+*************************************/
+#brian {
+  margin: 0; }
+  @media screen and (max-width: 480px) {
+    #brian {
+      margin-bottom: 35px; } }
 
 /*************************************
 FOOTER

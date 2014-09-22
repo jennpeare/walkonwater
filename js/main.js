@@ -1,5 +1,6 @@
 // global variables
 var windowHeight = $(window).height();
+var windowWidth = $(window).width();
 var navbarHeight = $('.navbar').height();
 // smooth scrolling: Intro Button
 $('#intro-btn').click(function() {
@@ -45,12 +46,17 @@ $(window).scroll(function() {
     $('#nav').addClass("navbar-fixed-top");
     $('#nav').removeClass("navbar-static-top");
     $('#about-us').css("padding-top", "140px");
-    $('.back-to-top').fadeIn();
+
+    if (windowWidth > 768) {
+      $('.back-to-top').fadeIn();
+    }
   } else {
     $('#nav').addClass("navbar-static-top");
     $('#nav').removeClass("navbar-fixed-top");
     $('#about-us').css("padding-top", "70px");
-    $('.back-to-top').fadeOut();
+    if (windowWidth > 768) {
+      $('.back-to-top').fadeOut();
+    }
   }
   return false;
 });
