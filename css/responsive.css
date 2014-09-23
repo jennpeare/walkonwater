@@ -1,0 +1,121 @@
+/*************************************
+  TABLET
+*************************************/
+@media screen and (max-width: 768px) {
+  /* GENERAL */
+  body {
+    font-size: 14px; }
+
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.125em; }
+
+  h2 {
+    font-size: 2em;
+    line-height: 1.25em; }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25em; }
+
+  .postcard {
+    margin: 17.5px 0; }
+
+  /* LANDING PAGE */
+  .landing {
+    background-attachment: scroll; }
+    .landing .spacer {
+      margin: 35px auto; }
+
+  #landing-logo {
+    max-width: 120px; }
+
+  #landing-title {
+    font-size: 3.75em; }
+
+  #landing-subtitle {
+    font-size: 1.75em; }
+
+  .landing-intro {
+    font-size: 1.375em; }
+
+  /* FOOTER */
+  .footer {
+    background-attachment: scroll; } }
+/*************************************
+  TABLET: PORTRAIT
+*************************************/
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+  /* LANDING PAGE */
+  #intro-down {
+    display: none; } }
+/*************************************
+  TABLET: LANDSCAPE
+*************************************/
+@media screen and (min-width: 641px) and (max-width: 1024px) and (orientation: landscape) {
+  /* LANDING PAGE */
+  .landing {
+    background-attachment: scroll; }
+
+  #intro-down {
+    display: none; } }
+/*************************************
+  MOBILE
+*************************************/
+@media screen and (max-width: 640px) {
+  /* GENERAL */
+  h1 {
+    font-size: 2em;
+    line-height: 1.25em; }
+
+  h2 {
+    font-size: 1.625em;
+    line-height: 1.15384615em; }
+
+  h3 {
+    font-size: 1.375em;
+    line-height: 1.13636364em; }
+
+  /* LANDING PAGE */
+  .landing .spacer {
+    margin: 17.5px auto; }
+
+  #landing-logo {
+    width: 80px; }
+
+  #landing-title {
+    font-size: 3em; }
+
+  #landing-subtitle {
+    font-size: 1.375em; }
+
+  .landing-intro {
+    font-size: 1.125em; }
+
+  #intro-btn {
+    width: 60%;
+    font-size: 14px;
+    padding: 5px 7px; } }
+/*************************************
+  MOBILE: PORTRAIT
+*************************************/
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  /* LANDING PAGE */
+  #intro-down {
+    display: none; } }
+/*************************************
+  MOBILE: LANDSCAPE
+*************************************/
+@media screen and (max-width: 640px) and (orientation: landscape) {
+  /* LANDING PAGE */
+  #intro-btn {
+    display: none; } }
+/*************************************
+  LAPTOP SCREENS
+*************************************/
+@media screen and (min-width: 768px) {
+  /* LANDING PAGE */
+  #intro-down {
+    display: none; } }
+
+/*# sourceMappingURL=responsive.css.map */

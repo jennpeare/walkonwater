@@ -2,8 +2,14 @@
 var windowHeight = $(window).height();
 var windowWidth = $(window).width();
 var navbarHeight = $('.navbar').height();
+
 // smooth scrolling: Intro Button
 $('#intro-btn').click(function() {
+  $("html, body").animate({ scrollTop: windowHeight }, 1000);
+  return false;
+});
+
+$('#intro-down').click(function() {
   $("html, body").animate({ scrollTop: windowHeight }, 1000);
   return false;
 });
@@ -36,26 +42,27 @@ $('.back-to-top').click(function() {
 $(window).scroll(function() {
 
   // parallax
-  if (windowWidth > 768) {
-    var bg = document.getElementById("bg");
-    var speed = 3;
-    var yOffset = window.pageYOffset;
-    bg.style.backgroundPosition = "0px "+ (yOffset / speed) * -1 + "px";
-  }
+  // if (windowWidth > 768) {
+  //   var bg = document.getElementById("bg");
+  //   var speed = 3;
+  //   var yOffset = window.pageYOffset;
+  //   bg.style.backgroundPosition = "0px "+ (yOffset / speed) * -1 + "px";
+  // }
+
   // scroll transitions
   if($(this).scrollTop() > windowHeight){
     $('#nav').addClass("navbar-fixed-top");
     $('#nav').removeClass("navbar-static-top");
     $('#about-us').css("padding-top", "140px");
 
-    if (windowWidth > 768) {
+    if (windowWidth > 480) {
       $('.back-to-top').fadeIn();
     }
   } else {
     $('#nav').addClass("navbar-static-top");
     $('#nav').removeClass("navbar-fixed-top");
     $('#about-us').css("padding-top", "70px");
-    if (windowWidth > 768) {
+    if (windowWidth > 480) {
       $('.back-to-top').fadeOut();
     }
   }
