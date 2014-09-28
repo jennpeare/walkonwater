@@ -29,21 +29,22 @@ h3 {
   margin: 0; }
 
 a {
-  color: #cf6557;
+  color: #eb7b59;
   font-weight: 600; }
   a:hover {
-    color: #e6aea6;
+    color: #f3b19d;
     text-decoration: none; }
 
 .spacer {
-  background: #cf6557;
-  border: 0 none;
-  height: 5px;
+  background: #cf4647;
+  border: none;
+  height: 3px;
   margin: 35px auto;
-  width: 6em; }
+  width: 50px; }
 
 button {
-  font-weight: 400;
+  color: #fff !important;
+  font-weight: 400 !important;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
@@ -55,14 +56,18 @@ button {
 
 .postcard {
   background-color: #fff;
+  margin: 17.5px auto;
   padding: 10px;
-  box-shadow: 5px 5px 10px #777777; }
+  box-shadow: 5px 5px 15px #777777; }
+
+strong {
+  font-weight: 600; }
 
 /*************************************
 NAVBAR
 *************************************/
 #nav {
-  background-color: rgba(186, 219, 210, 0.95);
+  background-color: rgba(213, 227, 224, 0.95);
   border: 0;
   margin: 0; }
 
@@ -74,39 +79,49 @@ NAVBAR
   margin: 0; }
 
 .navbar-brand {
-  line-height: 40px;
-  font-family: "Lobster", cursive; }
+  color: #79a79a !important;
+  font-family: "Lobster", cursive;
+  font-size: 1.75em;
+  line-height: 40px; }
 
 .navbar-nav {
   margin: 0 -15px; }
   .navbar-nav li a {
+    color: #000 !important;
     font-size: 0.875em;
     height: 70px;
     line-height: 40px;
     padding: 15px; }
+    .navbar-nav li a:hover {
+      color: #79a79a !important; }
 
 .navbar-toggle {
-  background-color: #fff;
-  border-color: #77b8a6 !important;
-  margin: 15px 15px; }
+  background-color: #79a79a;
+  border: 0;
+  margin: 19px 15px; }
+  .navbar-toggle .icon-bar {
+    background-color: #fff !important; }
+  .navbar-toggle:hover {
+    background-color: #fff !important; }
+    .navbar-toggle:hover .icon-bar {
+      background-color: #79a79a !important; }
 
 .navbar-collapse {
-  background-color: rgba(186, 219, 210, 0.95); }
-  .navbar-collapse li:hover {
-    background-color: #dcece8; }
+  border: 0;
+  background-color: rgba(213, 227, 224, 0.95); }
 
 /*************************************
 LANDING PAGE
 *************************************/
 .landing {
-  background: #000 url("../img/bg.jpg") no-repeat fixed left top;
+  background: url("../img/bg.jpg") no-repeat fixed center top;
   background-size: cover;
   height: 100%;
   padding: 0;
   text-align: center;
   width: 100%; }
   .landing .overlay {
-    background: rgba(35, 46, 63, 0.1);
+    background: rgba(63, 51, 45, 0.25);
     width: 100%;
     height: 100%;
     z-index: 1; }
@@ -119,89 +134,97 @@ LANDING PAGE
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
   .landing .spacer {
-    margin: 55px auto; }
+    margin: 50px auto; }
 
 #landing-logo {
   width: 150px; }
 
 #landing-title {
   font-family: "Lobster", cursive;
-  font-size: 6em;
+  font-size: 7em;
   line-height: 1.125em;
   margin: 17.5px 0 0;
-  text-shadow: 2px 2px 10px #000; }
+  text-shadow: 2px 2px 10px #000;
+  margin: 0; }
 
 #landing-subtitle {
   font-size: 2.25em;
   font-variant: small-caps;
-  line-height: 1.25em;
-  margin: 0;
-  text-shadow: 2px 2px 10px #000; }
+  line-height: 1em;
+  margin: 0; }
 
 .landing-intro {
+  font-weight: 300;
   margin: 0 auto;
-  font-size: 1.75em;
-  font-weight: 300; }
-
-#intro-btn {
-  border: 2px solid #fff;
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.3);
-  margin-top: 17.5px;
-  padding: 10px 16px;
-  font-size: 16px;
-  text-transform: uppercase;
-  width: 300px; }
-  #intro-btn:hover {
-    letter-spacing: 5px;
-    border: 2px solid #000;
-    color: #000; }
-
-#intro-down {
-  font-weight: 14px; }
-  #intro-down:hover {
-    cursor: pointer; }
+  width: 90%; }
+  .landing-intro p {
+    font-size: 1.5em;
+    opacity: .65; }
+  .landing-intro #intro-btn {
+    background-color: #cf4647;
+    font-size: 1em;
+    padding: 15px;
+    margin-top: 17.5px;
+    text-transform: uppercase;
+    width: 25%; }
+    .landing-intro #intro-btn:hover {
+      background-color: #df8383;
+      letter-spacing: 5px; }
+  .landing-intro #intro-down {
+    font-weight: 300;
+    font-size: .8125em;
+    opacity: .65; }
+    .landing-intro #intro-down:hover {
+      cursor: pointer; }
 
 /*************************************
 SECTIONS
 *************************************/
 .section {
+  background-color: #fff;
   padding: 70px 0; }
   .section:nth-child(even) {
-    background-color: #eee; }
+    background-color: #f6f3ed; }
   .section h2:not(:first-child),
   .section h3:not(:first-child) {
     margin: 35px 0 17.5px; }
 
 .header {
+  text-align: center;
   max-height: 95px; }
   .header .section-header {
     font-weight: 300;
     text-transform: uppercase; }
   .header .spacer {
-    margin: 35px 0; }
+    margin: 35px auto; }
 
 .description p {
   font-size: 1.125em;
   font-weight: 400;
-  margin: 17.5px 0 0; }
+  margin: 17.5px 0 0;
+  line-height: 1.51875em; }
 
 .class-group {
   background: #fff;
-  border: 1px solid #badbd2;
-  border-radius: 15px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  border-radius: 15px; }
   .class-group .class-heading {
-    background-color: #badbd2;
+    background-color: #6b584d;
     border-radius: 10px 10px 0 0;
+    color: #fff;
     font-size: 1.125em;
     font-weight: 600;
     margin: 0;
     padding: 10px;
     text-align: center; }
   .class-group .class-desc {
+    font-size: 0.875em;
     margin: 0;
     padding: 15px; }
+
+.border {
+  border: 1px solid #6b584d;
+  border-radius: 0 0 15px 15px; }
 
 .class-info {
   font-size: 0.875em;
@@ -215,7 +238,7 @@ SECTIONS
       border-radius: 0 0 10px 10px; }
     .class-info li span.glyphicon {
       font-size: 1.25em;
-      margin: 0 10px 0 0; }
+      margin: 3px 12px 0 0; }
     .class-info li p {
       line-height: 1.25em;
       margin: 0 0 10px; }
@@ -226,7 +249,7 @@ SECTIONS
 SECTIONS: INSTRUCTOR
 *************************************/
 #brian {
-  margin: 0 0 35px; }
+  margin: 0 auto 35px; }
 
 /*************************************
 FOOTER
@@ -235,14 +258,14 @@ FOOTER
   background: #57524e url("../img/paddleboards.jpg") no-repeat fixed left top;
   background-size: cover; }
   .footer .overlay {
-    background: rgba(35, 46, 63, 0.5);
+    background: rgba(63, 51, 45, 0.65);
     width: 100%;
     height: 100%;
     z-index: 1; }
   .footer .container {
     width: 90%;
     color: #fff;
-    padding: 70px 0 0; }
+    padding: 0; }
   .footer .footer-header {
     font-weight: 300;
     text-transform: uppercase; }
@@ -265,7 +288,7 @@ BACK TO TOP
 .back-to-top {
   display: none;
   border-radius: 100%;
-  background-color: #000;
+  background-color: #6b584d;
   height: 50px;
   width: 50px;
   position: fixed;
@@ -275,7 +298,12 @@ BACK TO TOP
   z-index: 9999; }
   .back-to-top:hover {
     opacity: .6;
-    cursor: pointer; }
+    cursor: pointer;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
   .back-to-top .glyphicon-chevron-up {
     font-size: 20px;
     color: #fff;
