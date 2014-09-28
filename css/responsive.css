@@ -63,7 +63,11 @@
       margin: 17.5px auto; }
 
   #intro-down {
-    display: none; } }
+    display: none; }
+
+  /* FOOTER */
+  .footer {
+    background-attachment: scroll; } }
 /*************************************
   MOBILE
 *************************************/
