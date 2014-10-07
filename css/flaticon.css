@@ -15,10 +15,24 @@
 [class*=" flaticon-"]:after {
 	font-family: Flaticon;
 	font-style: normal;
-	font-size: 25px;
 	margin: 0;
 }
 
-.flaticon-facebook24:before {
+.flaticon-facebook29:before {
 	content: "\e000";
+}
+
+.flaticon-flower87:before {
+	content: "\e001";
+}
+
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+@font-face {
+	font-family:"Hibiscus";
+	src: url("../fonts/Hibiscus.eot") format("eot"),
+		url("../fonts/Hibiscus.woff") format("woff"),
+		url("../fonts/Hibiscus.ttf") format("truetype"),
+		url("../fonts/Hibiscus.svg#Hibiscus") format("svg");
+	font-weight:normal;
+	font-style:normal;
 }

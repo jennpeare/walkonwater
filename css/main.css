@@ -29,14 +29,14 @@ h3 {
   margin: 0; }
 
 a {
-  color: #eb7b59;
+  color: #dd936e;
   font-weight: 600; }
   a:hover {
-    color: #f3b19d;
+    color: #ce6530;
     text-decoration: none; }
 
 .spacer {
-  background: #cf4647;
+  background: #d95b4f;
   border: none;
   height: 3px;
   margin: 35px auto;
@@ -54,11 +54,57 @@ button {
     outline: none !important;
     box-shadow: none !important; }
 
-.postcard {
+.postcard figure {
   background-color: #fff;
-  margin: 17.5px auto;
+  margin: 35px auto;
   padding: 10px;
-  box-shadow: 5px 5px 15px #777777; }
+  box-shadow: 6px 6px 15px rgba(50, 50, 50, 0.75);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+  -webkit-backface-visibility: hidden; }
+  .postcard figure::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -25px;
+    top: -15px;
+    width: 75px;
+    height: 30px;
+    background-color: rgba(227, 204, 128, 0.5);
+    -webkit-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    -webkit-backface-visibility: hidden; }
+.postcard figcaption {
+  font-family: "Gloria Hallelujah", cursive;
+  padding-top: 10px;
+  text-align: center; }
+
+.reverse figure {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  -webkit-backface-visibility: hidden; }
+  .reverse figure::after {
+    display: block;
+    position: absolute;
+    left: 410px;
+    top: -15px;
+    width: 75px;
+    height: 30px;
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    transform: rotate(25deg);
+    -webkit-backface-visibility: hidden; }
 
 strong {
   font-weight: 600; }
@@ -67,7 +113,7 @@ strong {
 NAVBAR
 *************************************/
 #nav {
-  background-color: rgba(213, 227, 224, 0.95);
+  background-color: #669191;
   border: 0;
   margin: 0; }
 
@@ -79,7 +125,7 @@ NAVBAR
   margin: 0; }
 
 .navbar-brand {
-  color: #79a79a !important;
+  color: #fff !important;
   font-family: "Lobster", cursive;
   font-size: 1.75em;
   line-height: 40px; }
@@ -87,16 +133,21 @@ NAVBAR
 .navbar-nav {
   margin: 0 -15px; }
   .navbar-nav li a {
-    color: #000 !important;
+    border-bottom: 5px solid transparent;
+    color: #fff !important;
     font-size: 0.875em;
     height: 70px;
     line-height: 40px;
     padding: 15px; }
-    .navbar-nav li a:hover {
-      color: #79a79a !important; }
+    .navbar-nav li a:hover, .navbar-nav li a.active {
+      background: #92b2b2 !important; }
+  .navbar-nav li a.flaticon-facebook29 {
+    font-size: 35px; }
+    .navbar-nav li a.flaticon-facebook29:hover {
+      color: #3b5998 !important; }
 
 .navbar-toggle {
-  background-color: #79a79a;
+  background-color: #92b2b2;
   border: 0;
   margin: 19px 15px; }
   .navbar-toggle .icon-bar {
@@ -104,11 +155,12 @@ NAVBAR
   .navbar-toggle:hover {
     background-color: #fff !important; }
     .navbar-toggle:hover .icon-bar {
-      background-color: #79a79a !important; }
+      background-color: #669191 !important; }
 
 .navbar-collapse {
+  background-color: #669191;
   border: 0;
-  background-color: rgba(213, 227, 224, 0.95); }
+  padding: 0 15px; }
 
 /*************************************
 LANDING PAGE
@@ -121,7 +173,7 @@ LANDING PAGE
   text-align: center;
   width: 100%; }
   .landing .overlay {
-    background: rgba(63, 51, 45, 0.25);
+    background: rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 100%;
     z-index: 1; }
@@ -161,14 +213,14 @@ LANDING PAGE
     font-size: 1.5em;
     opacity: .65; }
   .landing-intro #intro-btn {
-    background-color: #cf4647;
+    background-color: #d95b4f;
     font-size: 1em;
     padding: 15px;
     margin-top: 17.5px;
     text-transform: uppercase;
     width: 25%; }
     .landing-intro #intro-btn:hover {
-      background-color: #df8383;
+      background-color: #e7968e;
       letter-spacing: 5px; }
   .landing-intro #intro-down {
     font-weight: 300;
@@ -181,20 +233,26 @@ LANDING PAGE
 SECTIONS
 *************************************/
 .section {
-  background-color: #fff;
+  background: #fff;
   padding: 70px 0; }
-  .section:nth-child(even) {
-    background-color: #f6f3ed; }
+  .section:nth-of-type(odd) {
+    background: #e8e5e1 url("../img/diagonal-pattern.png"); }
+  .section h2, .section h3 {
+    color: #669191;
+    font-weight: 300; }
   .section h2:not(:first-child),
   .section h3:not(:first-child) {
     margin: 35px 0 17.5px; }
 
 .header {
+  font-family: "Lobster", cursive;
   text-align: center;
   max-height: 95px; }
-  .header .section-header {
-    font-weight: 300;
-    text-transform: uppercase; }
+  .header h1:before, .header h1:after {
+    content: "e";
+    color: #b53327;
+    font-family: "Hibiscus", serif;
+    margin: 0 15px; }
   .header .spacer {
     margin: 35px auto; }
 
@@ -207,9 +265,14 @@ SECTIONS
 .class-group {
   background: #fff;
   margin-top: 20px;
-  border-radius: 15px; }
+  border-radius: 15px;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s; }
   .class-group .class-heading {
-    background-color: #6b584d;
+    background-color: #817464;
     border-radius: 10px 10px 0 0;
     color: #fff;
     font-size: 1.125em;
@@ -223,7 +286,8 @@ SECTIONS
     padding: 15px; }
 
 .border {
-  border: 1px solid #6b584d;
+  border: 1px solid #817464;
+  border-top: 0;
   border-radius: 0 0 15px 15px; }
 
 .class-info {
@@ -245,32 +309,52 @@ SECTIONS
       .class-info li p:last-child {
         margin: 0; }
     .class-info li .register {
-      background-color: #cf4647;
+      background-color: #d95b4f;
       display: block;
       font-size: 1em;
       margin: 0 auto;
       width: 90%; }
       .class-info li .register:hover {
-        background-color: #df8383;
+        background-color: #e7968e;
         letter-spacing: 5px; }
+
+/*************************************
+SECTIONS: ABOUT US
+*************************************/
+#about-paddleboard {
+  width: 300px;
+  margin-left: -15px; }
+
+#about-tagline p {
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: -2px;
+  margin: 52.5px auto 0;
+  text-transform: uppercase;
+  text-align: center; }
+  #about-tagline p strong {
+    color: #669191; }
 
 /*************************************
 SECTIONS: INSTRUCTOR
 *************************************/
 #brian {
-  margin: 0 auto 35px; }
+  background: #e8e5e1;
+  border: 3px dashed #817464;
+  margin: 0 auto 35px;
+  padding: 10px; }
 
 /*************************************
 FOOTER
 *************************************/
 .footer {
-  background: #6b584d url("../img/paddleboards.jpg") no-repeat fixed left top;
+  background: #817464 url("../img/paddleboards.jpg") no-repeat fixed left top;
   background-size: cover;
   padding: 0;
   text-align: center;
   width: 100%; }
   .footer .overlay {
-    background: rgba(63, 51, 45, 0.65);
+    background: rgba(0, 0, 0, 0.65);
     width: 100%;
     height: 100%;
     z-index: 1; }
@@ -284,7 +368,8 @@ FOOTER
   .footer .logos {
     margin: 60px 0; }
   .footer .company-logo {
-    margin: 10px; }
+    margin: 10px;
+    width: 200px; }
 
 #copyright {
   font-weight: 400;
@@ -300,7 +385,7 @@ BACK TO TOP
 .back-to-top {
   display: none;
   border-radius: 100%;
-  background-color: #3f332d;
+  background-color: #564d43;
   height: 50px;
   width: 50px;
   position: fixed;

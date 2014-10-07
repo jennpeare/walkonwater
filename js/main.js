@@ -11,7 +11,9 @@ $('a[href*=#]:not([href=#])').click(function() {
 // scroll transitions
 $(window).scroll(function() {
 
-  if ($(this).scrollTop() > windowHeight){
+  var yOffset = $(this).scrollTop();
+
+  if (yOffset > windowHeight){
     $('#nav').addClass("navbar-fixed-top");
     $('#nav').removeClass("navbar-static-top");
     $('#about-us').css("padding-top", "140px");
@@ -26,6 +28,14 @@ $(window).scroll(function() {
       $('.back-to-top').fadeOut();
     }
   }
+
+  // dynamically changing active navbar links
+  $('.link').each(function (event) {
+    if (yOffset >= $($(this).attr('href')).offset().top - navbarHeight) {
+      $('.link').not(this).removeClass('active');
+      $(this).addClass('active');
+    }
+  });
   return false;
 });
 
@@ -38,6 +48,12 @@ $('#intro-btn').click(function() {
 // smooth scrolling: Intro "v"
 $('#intro-down').click(function() {
   $("html, body").animate({ scrollTop: windowHeight }, 1000);
+  return false;
+});
+
+// smooth scrolling: brand
+$('.navbar-brand').click(function() {
+  $("html, body").animate({ scrollTop: 0 }, 1000);
   return false;
 });
 

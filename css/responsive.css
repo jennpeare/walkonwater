@@ -18,6 +18,27 @@
     font-size: 1.5em;
     line-height: 1.25em; }
 
+  .postcard figure {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-backface-visibility: hidden; }
+    .postcard figure::after {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-backface-visibility: hidden;
+      position: absolute;
+      left: 45%; }
+
+  /* NAVBAR */
+  .navbar-nav li a.flaticon-facebook29 {
+    font-size: 25px !important; }
+
   /* LANDING PAGE */
   .landing {
     background-attachment: scroll; }
@@ -42,6 +63,14 @@
   .landing-intro #intro-down {
     font-size: 1em; }
 
+  /* SECTIONS: ABOUT US */
+  #about-paddleboard {
+    display: none; }
+
+  #about-tagline p {
+    font-size: 1.75em;
+    margin: 0 auto; }
+
   /* FOOTER */
   .footer {
     background-attachment: scroll; } }
@@ -56,6 +85,28 @@
   TABLET: LANDSCAPE
 *************************************/
 @media screen and (min-width: 641px) and (max-width: 1024px) and (orientation: landscape) {
+  /* GENERAL */
+  .postcard figure {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-backface-visibility: hidden; }
+    .postcard figure::after {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-backface-visibility: hidden;
+      position: absolute;
+      left: 45%; }
+
+  /* NAVBAR */
+  .navbar-nav li a.flaticon-facebook29 {
+    font-size: 25px !important; }
+
   /* LANDING PAGE */
   .landing {
     background-attachment: scroll; }
@@ -64,6 +115,13 @@
 
   #intro-down {
     display: none; }
+
+  /* SECTIONS: ABOUT US */
+  #about-paddleboard {
+    display: none; }
+
+  #about-tagline p {
+    margin: 0 auto; }
 
   /* FOOTER */
   .footer {
@@ -108,7 +166,16 @@
   .landing-intro #intro-btn {
     width: 60% !important; }
   .landing-intro #intro-down {
-    font-size: .7143em; } }
+    font-size: .7143em; }
+
+  /* SECTIONS */
+  .header h1:before, .header h1:after {
+    margin: 0 5px;
+    font-size: .73em; }
+
+  /* SECTIONS: ABOUT US */
+  #about-tagline p {
+    font-size: 1.25em; } }
 /*************************************
   MOBILE: PORTRAIT
 *************************************/
