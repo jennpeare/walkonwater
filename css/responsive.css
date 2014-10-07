@@ -170,8 +170,7 @@
 
   /* SECTIONS */
   .header h1:before, .header h1:after {
-    margin: 0 5px;
-    font-size: .73em; }
+    display: none; }
 
   /* SECTIONS: ABOUT US */
   #about-tagline p {
