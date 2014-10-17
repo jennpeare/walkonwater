@@ -16,14 +16,14 @@ $(window).scroll(function() {
   if (yOffset > windowHeight){
     $('#nav').addClass("navbar-fixed-top");
     $('#nav').removeClass("navbar-static-top");
-    $('#about-us').css("padding-top", "140px");
+    $('#about-us').css("padding-top", "100px");
     if (windowWidth > 480) {
       $('.back-to-top').fadeIn();
     }
   } else {
     $('#nav').addClass("navbar-static-top");
     $('#nav').removeClass("navbar-fixed-top");
-    $('#about-us').css("padding-top", "70px");
+    $('#about-us').css("padding-top", navbarHeight);
     if (windowWidth > 480) {
       $('.back-to-top').fadeOut();
     }
@@ -70,7 +70,7 @@ $('a[href*=#]:not([href=#])').click(function() {
     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
     if (target.length) {
       if (this.hash == "#about-us") {
-        $('#about-us').css("padding-top", "70px");
+        $('#about-us').css("padding-top", navbarHeight);
         $('html,body').animate({ scrollTop: (target.offset().top)}, 1000);
       } else {
         $('html,body').animate({ scrollTop: (target.offset().top) - navbarHeight + 1}, 1000);
