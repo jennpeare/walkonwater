@@ -11,10 +11,9 @@
 
   <!-- CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Lobster|Gloria+Hallelujah|Merriweather:400,700|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lobster|Gloria+Hallelujah|Merriweather:400,700|Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
   <link href="css/flaticon.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -30,9 +29,11 @@
     <div class="overlay">
       <div class="container">
         <img id="landing-logo" src="img/logo-inverse.png">
-        <p id="landing-title">Walk on Water</p>
-        <p id="landing-subtitle">Stand Up Paddleboarding</p>
-        <div class="spacer"></div>
+        <div class="landing-header">
+          <p id="landing-title">Walk on Water</p>
+          <p id="landing-subtitle">Stand Up Paddleboarding</p>
+        </div>
+        <!-- <div class="spacer"></div> -->
         <div class="landing-intro">
           <p>We bring stand up paddleboarding to Roswell and the Chattahoochee.</p>
           <button type="button" id="intro-btn" class="btn">Let's Go!</button>
@@ -97,17 +98,17 @@
     </div>
   </div>
 
-  <div class="section" id="paddleboard">
-    <div class="container-fluid">
+  <div class="section overlay" id="paddleboard">
+      <div class="container-fluid">
 
-      <div class="row">
-        <div class="col-lg-3">
-          <img id="about-paddleboard" src="img/pbcrop-half.png">
+        <div class="row">
+          <div class="col-lg-3">
+            <img id="paddleboard-img" src="img/pbcrop-half.png">
+          </div>
+          <div class="col-lg-9" id="paddleboard-text">
+            <p>Come <strong>paddleboard</strong> down the <strong>Chattahoochee</strong> with us!</p>
+          </div>
         </div>
-        <div class="col-lg-9" id="about-tagline">
-          <p>Come <strong>paddleboard</strong> down the <strong>Chattahoochee</strong> with us!</p>
-        </div>
-      </div>
 
     </div>
   </div>
@@ -146,7 +147,9 @@
       </div>
 
       <h3>Registration</h3>
-      <p>To sign up for any of our SUP series, please visit Roswell Recreation &amp; Park's online registration system. You may also contact Roswell Recreation &amp; Park at <a href="mailto:recweb@roswellgov.com">recweb@roswellgov.com</a> or call <a href="tel:770-641-3705">770-641-3705</a> for any questions regarding online registration. <a href="http://www.roswellgov.com/index.aspx?NID=510" target="_blank">More Information &raquo;</a></p>
+      <div class="description small">
+        <p>To sign up for any of our SUP series, please visit Roswell Recreation &amp; Park's online registration system. You may also contact Roswell Recreation &amp; Park at <a href="mailto:recweb@roswellgov.com">recweb@roswellgov.com</a> or call <a href="tel:770-641-3705">770-641-3705</a> for any questions regarding online registration. <a href="http://www.roswellgov.com/index.aspx?NID=510" target="_blank">More Information &raquo;</a></p>
+      </div>
 
       <div class="row">
 
@@ -173,7 +176,7 @@
                 </span>
               </li>
               <li>
-                <a href="https://webtrac.ci.roswell.ga.us/wbwsc/webtrac.wsc/wbsplash.html?wbp=1" target="_blank"><button type="button" class="btn register">Register</button></a>
+                <a href="https://webtrac.ci.roswell.ga.us/wbwsc/webtrac.wsc/wbsplash.html?wbp=1" target="_blank"><button type="button" class="btn register-btn">Register</button></a>
               </li>
             </ul>
           </div>
@@ -201,7 +204,7 @@
                 </span>
               </li>
               <li>
-                <a href="https://webtrac.ci.roswell.ga.us/wbwsc/webtrac.wsc/wbsplash.html?wbp=1" target="_blank"><button type="button" class="btn register">Register</button></a>
+                <a href="https://webtrac.ci.roswell.ga.us/wbwsc/webtrac.wsc/wbsplash.html?wbp=1" target="_blank"><button type="button" class="btn register-btn">Register</button></a>
               </li>
             </ul>
           </div>
@@ -229,7 +232,7 @@
                 </span>
               </li>
               <li>
-                <a href="https://webtrac.ci.roswell.ga.us/wbwsc/webtrac.wsc/wbsplash.html?wbp=1" target="_blank"><button type="button" class="btn register">Register</button></a>
+                <a href="https://webtrac.ci.roswell.ga.us/wbwsc/webtrac.wsc/wbsplash.html?wbp=1" target="_blank"><button type="button" class="btn register-btn">Register</button></a>
               </li>
             </ul>
           </div>
@@ -275,12 +278,14 @@
           </div>
 
           <h3>Registration</h3>
-          <p>Registration is required the Monday before each session. For quickest registration or to check availability of a program, please visit our online registration center. You may also email our scheduling department at <a href="mailto:scheduling@chattnaturecenter.org">scheduling@chattnaturecenter.org</a> or call <a href="tel:770-992-2055,237">770-992-2055 x237</a>.</p>
+          <div class="description small">
+            <p>Registration is required the Monday before each session. For quickest registration or to check availability of a program, please visit our online registration center. You may also email our scheduling department at <a href="mailto:scheduling@chattnaturecenter.org">scheduling@chattnaturecenter.org</a> or call <a href="tel:770-992-2055,237">770-992-2055 x237</a>.</p>
+          </div>
         </div>
         <div class="col-md-4 col-md-offset-1">
           <div class="class-group">
             <p class="class-heading">Stand-up Paddleboarding</p>
-            <ul class="class-info border">
+            <ul class="class-info">
               <li class="clearfix">
                 <span class="glyphicon glyphicon-calendar pull-left"></span>
                 <span class="pull-left">
@@ -306,7 +311,7 @@
                 </span>
               </li>
               <li>
-                <a href="https://ecommerce.chattnaturecenter.org/itemList.aspx?node_id=15505" target="_blank"><button type="button" class="btn register">Register</button></a>
+                <a href="https://ecommerce.chattnaturecenter.org/itemList.aspx?node_id=15505" target="_blank"><button type="button" class="btn register-btn">Register</button></a>
               </li>
             </ul>
           </div>
@@ -354,7 +359,10 @@
         </div>
         <div id="copyright">
           &copy; 2014 Walk on Water Adventures, LLC. All rights reserved.<br>
-          <p class="credits">Icons made by SimpleIcon, Freepik from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
+          <p class="credits">
+            Icons made by SimpleIcon, Freepik from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>.
+            Some backgrounds from <a href="http://bgpatterns.com/" target="_blank">BGPatterns</a>.
+          </p>
         </div>
       </div>
     </div>
