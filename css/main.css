@@ -11,7 +11,7 @@ body {
     html,
     body {
       font-size: 14px; } }
-  @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+  @media screen and (max-width: 1024px) and (orientation: landscape) {
     html,
     body {
       font-size: 14px; } }
@@ -24,7 +24,7 @@ h1 {
   @media screen and (max-width: 800px) {
     h1 {
       font-size: 2em; } }
-  @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+  @media screen and (max-width: 1024px) and (orientation: landscape) {
     h1 {
       font-size: 2em; } }
   @media screen and (max-width: 480px) {
@@ -39,7 +39,7 @@ h2 {
   @media screen and (max-width: 800px) {
     h2 {
       font-size: 1.71428em; } }
-  @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+  @media screen and (max-width: 1024px) and (orientation: landscape) {
     h2 {
       font-size: 1.71428em; } }
   @media screen and (max-width: 480px) {
@@ -54,7 +54,7 @@ h3 {
   @media screen and (max-width: 800px) {
     h3 {
       font-size: 1.28571em; } }
-  @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+  @media screen and (max-width: 1024px) and (orientation: landscape) {
     h3 {
       font-size: 1.28571em; } }
 
@@ -101,7 +101,7 @@ button {
   @media screen and (max-width: 800px) {
     .postcard {
       padding: 0 25px; } }
-  @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+  @media screen and (max-width: 1024px) and (orientation: landscape) {
     .postcard {
       padding: 0 25px; } }
   .postcard figure {
@@ -123,7 +123,7 @@ button {
         transform: rotate(0deg);
         -webkit-backface-visibility: hidden;
         margin: 25px auto; } }
-    @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+    @media screen and (max-width: 1024px) and (orientation: landscape) {
       .postcard figure {
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -157,7 +157,7 @@ button {
           -webkit-backface-visibility: hidden;
           top: -10px;
           left: 45%; } }
-      @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+      @media screen and (max-width: 1024px) and (orientation: landscape) {
         .postcard figure::after {
           -webkit-transform: rotate(0deg);
           -moz-transform: rotate(0deg);
@@ -177,7 +177,7 @@ button {
   @media screen and (max-width: 800px) {
     .reverse {
       padding: 0 25px 25px; } }
-  @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+  @media screen and (max-width: 1024px) and (orientation: landscape) {
     .reverse {
       padding: 0 25px 25px; } }
   .reverse figure {
@@ -195,7 +195,7 @@ button {
         -ms-transform: rotate(0deg);
         transform: rotate(0deg);
         -webkit-backface-visibility: hidden; } }
-    @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+    @media screen and (max-width: 1024px) and (orientation: landscape) {
       .reverse figure {
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -226,7 +226,7 @@ button {
           -webkit-backface-visibility: hidden;
           top: -10px;
           left: 42.5%; } }
-      @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+      @media screen and (max-width: 1024px) and (orientation: landscape) {
         .reverse figure::after {
           -webkit-transform: rotate(0deg);
           -moz-transform: rotate(0deg);
@@ -272,7 +272,7 @@ NAVBAR
     @media screen and (max-width: 800px) {
       .navbar-nav li a.flaticon-facebook29 {
         font-size: 25px; } }
-    @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+    @media screen and (max-width: 1024px) and (orientation: landscape) {
       .navbar-nav li a.flaticon-facebook29 {
         font-size: 25px; } }
     .navbar-nav li a.flaticon-facebook29:hover {
@@ -305,7 +305,7 @@ LANDING PAGE
   @media screen and (max-width: 800px) {
     .landing {
       background-attachment: scroll; } }
-  @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+  @media screen and (max-width: 1024px) and (orientation: landscape) {
     .landing {
       background-attachment: scroll; } }
   .landing .overlay {
@@ -323,10 +323,10 @@ LANDING PAGE
 
 #landing-logo {
   width: 150px; }
-  @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+  @media screen and (max-width: 1024px) and (orientation: landscape) {
     #landing-logo {
       width: 120px; } }
-  @media screen and (min-width: 640px) and (max-width: 800px) and (orientation: landscape) {
+  @media screen and (max-width: 800px) and (orientation: landscape) {
     #landing-logo {
       width: 100px; } }
   @media screen and (max-width: 480px) {
@@ -346,10 +346,10 @@ LANDING PAGE
   @media screen and (max-width: 800px) {
     .landing-header {
       width: 85%; } }
-  @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+  @media screen and (max-width: 1024px) and (orientation: landscape) {
     .landing-header {
       width: 82.5%; } }
-  @media screen and (min-width: 640px) and (max-width: 800px) and (orientation: landscape) {
+  @media screen and (max-width: 800px) and (orientation: landscape) {
     .landing-header {
       padding: 6.25px 0 12.5px;
       margin: 12.5px auto;
@@ -367,10 +367,10 @@ LANDING PAGE
     @media screen and (max-width: 800px) {
       .landing-header #landing-title {
         font-size: 6.75em; } }
-    @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+    @media screen and (max-width: 1024px) and (orientation: landscape) {
       .landing-header #landing-title {
         font-size: 6.75em; } }
-    @media screen and (min-width: 640px) and (max-width: 800px) and (orientation: landscape) {
+    @media screen and (max-width: 800px) and (orientation: landscape) {
       .landing-header #landing-title {
         font-size: 3.5em; } }
     @media screen and (max-width: 480px) {
@@ -384,7 +384,7 @@ LANDING PAGE
     font-variant: small-caps;
     line-height: 1em;
     margin: 0; }
-    @media screen and (min-width: 640px) and (max-width: 800px) and (orientation: landscape) {
+    @media screen and (max-width: 800px) and (orientation: landscape) {
       .landing-header #landing-subtitle {
         font-size: 1.5em; } }
     @media screen and (max-width: 480px) {
@@ -415,7 +415,7 @@ LANDING PAGE
   font-weight: 300;
   opacity: .6;
   margin: 0 auto 25px; }
-  @media screen and (min-width: 640px) and (max-width: 800px) and (orientation: landscape) {
+  @media screen and (max-width: 800px) and (orientation: landscape) {
     .landing-intro p {
       font-size: 1.142857em;
       margin: 0 auto 12.5px; } }
@@ -431,7 +431,7 @@ LANDING PAGE
   text-transform: uppercase;
   font-size: 1.125em;
   width: 25%; }
-  @media screen and (min-width: 640px) and (max-width: 800px) and (orientation: landscape) {
+  @media screen and (max-width: 800px) and (orientation: landscape) {
     .landing-intro #intro-btn {
       font-size: 0.875em;
       padding: 5px 0; } }
@@ -481,7 +481,7 @@ SECTIONS
     @media screen and (max-width: 800px) {
       .header .banner {
         height: 50px; } }
-    @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+    @media screen and (max-width: 1024px) and (orientation: landscape) {
       .header .banner {
         height: 50px; } }
     @media screen and (max-width: 480px) {
@@ -500,7 +500,7 @@ SECTIONS
     @media screen and (max-width: 800px) {
       .header::before, .header::after {
         border: 30px solid #ddd8d3; } }
-    @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+    @media screen and (max-width: 1024px) and (orientation: landscape) {
       .header::before, .header::after {
         border: 30px solid #ddd8d3; } }
     @media screen and (max-width: 480px) {
@@ -524,7 +524,7 @@ SECTIONS
     @media screen and (max-width: 800px) {
       .header h1 {
         line-height: 40px; } }
-    @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+    @media screen and (max-width: 1024px) and (orientation: landscape) {
       .header h1 {
         line-height: 40px; } }
   .header h1::before, .header h1::after {
@@ -618,7 +618,7 @@ SECTIONS: PADDLEBOARD
   @media screen and (max-width: 800px) {
     #paddleboard-img {
       display: none; } }
-  @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+  @media screen and (max-width: 1024px) and (orientation: landscape) {
     #paddleboard-img {
       display: none; } }
 
@@ -627,10 +627,10 @@ SECTIONS: PADDLEBOARD
   @media screen and (max-width: 800px) {
     #paddleboard-text {
       height: 85px; } }
-  @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+  @media screen and (max-width: 1024px) and (orientation: landscape) {
     #paddleboard-text {
       height: 50px; } }
-  @media screen and (min-width: 640px) and (max-width: 800px) and (orientation: landscape) {
+  @media screen and (max-width: 800px) and (orientation: landscape) {
     #paddleboard-text {
       height: 40px; } }
   @media screen and (max-width: 480px) {
@@ -651,7 +651,7 @@ SECTIONS: PADDLEBOARD
     margin: 0;
     text-align: center;
     text-transform: uppercase; }
-    @media screen and (min-width: 640px) and (max-width: 800px) and (orientation: landscape) {
+    @media screen and (max-width: 800px) and (orientation: landscape) {
       #paddleboard-text p {
         font-size: 1.85em; } }
     @media screen and (max-width: 480px) {
@@ -676,7 +676,7 @@ SECTIONS: INSTRUCTOR
   @media screen and (max-width: 800px) {
     #brian {
       width: 200px; } }
-  @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+  @media screen and (max-width: 1024px) and (orientation: landscape) {
     #brian {
       width: 200px; } }
   @media screen and (max-width: 480px) {
@@ -698,7 +698,7 @@ FOOTER
   @media screen and (max-width: 800px) {
     .footer {
       background-attachment: scroll; } }
-  @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+  @media screen and (max-width: 1024px) and (orientation: landscape) {
     .footer {
       background-attachment: scroll; } }
   .footer .overlay {
@@ -729,7 +729,7 @@ FOOTER
     @media screen and (max-width: 800px) {
       .footer .company-logo {
         height: 90px; } }
-    @media screen and (min-width: 640px) and (max-width: 800px) and (orientation: landscape) {
+    @media screen and (max-width: 800px) and (orientation: landscape) {
       .footer .company-logo {
         height: 90px; } }
     @media screen and (max-width: 480px) {
