@@ -758,7 +758,7 @@ SECTIONS: INSTRUCTOR
 FOOTER
 *************************************/
 .footer {
-  background: #817464 url("../img/paddleboards.jpg") no-repeat fixed left top;
+  background: #817464 url("../img/footer.jpg") no-repeat fixed left top;
   background-size: cover;
   padding: 0;
   text-align: center;
