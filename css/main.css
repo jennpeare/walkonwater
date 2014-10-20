@@ -64,10 +64,10 @@ h3 {
   margin: 0; }
 
 a {
-  color: #dd936e;
+  color: #ce6530;
   font-weight: 600; }
   a:hover {
-    color: #ce6530;
+    color: #dd936e;
     text-decoration: none; }
 
 .spacer {
@@ -93,7 +93,7 @@ button {
     box-shadow: none !important;
     outline: none !important; }
   button:hover {
-    background-color: #e7968e;
+    background-color: #b53327;
     letter-spacing: 5px; }
 
 .postcard {
@@ -309,7 +309,7 @@ LANDING PAGE
     .landing {
       background-attachment: scroll; } }
   .landing .overlay {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 100%;
     z-index: 10; }
@@ -445,8 +445,14 @@ LANDING PAGE
 SECTIONS
 *************************************/
 .section {
-  background: #fff;
-  padding: 50px 0; }
+  background: #fff url("../img/sandpaper.png");
+  padding: 75px 0; }
+  @media screen and (max-width: 480px) {
+    .section {
+      padding: 50px 0; } }
+  @media screen and (max-width: 640px) and (orientation: landscape) {
+    .section {
+      padding: 50px 0; } }
   .section h2, .section h3 {
     color: #669191;
     font-weight: 300; }
@@ -455,7 +461,7 @@ SECTIONS
     margin: 25px 0 12.5px; }
 
 .header {
-  margin: 0 auto 50px;
+  margin: 0 auto 75px;
   position: relative;
   text-align: center;
   width: 80%;
@@ -476,7 +482,6 @@ SECTIONS
     height: 70px;
     position: relative;
     padding: 3px 0;
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
     z-index: 200; }
     @media screen and (max-width: 800px) {
       .header .banner {
@@ -535,8 +540,6 @@ SECTIONS
     @media screen and (max-width: 480px) {
       .header h1::before, .header h1::after {
         display: none; } }
-  .header .spacer {
-    margin: 25px auto; }
 
 .description p {
   font-family: "Merriweather", serif;
@@ -609,8 +612,8 @@ SECTIONS
 SECTIONS: PADDLEBOARD
 *************************************/
 #paddleboard {
-  background: url("../img/paddleboard-bg.png") fixed;
-  padding: 25px 0; }
+  background: url("../img/brown-flower.png") fixed;
+  padding: 33.33333px 0; }
 
 #paddleboard-img {
   width: 300px;
@@ -666,25 +669,90 @@ SECTIONS: PADDLEBOARD
       color: #669191; }
 
 /*************************************
+SECTIONS: QUOTE
+*************************************/
+#quote {
+  background: #ce6530;
+  padding: 33.33333px 0; }
+
+#quote-icon {
+  color: #fff;
+  float: left;
+  font-size: 3em;
+  margin-right: 37.5px; }
+  @media screen and (max-width: 800px) {
+    #quote-icon {
+      font-size: 2.75em;
+      margin-right: 25px; } }
+  @media screen and (max-width: 1024px) and (orientation: landscape) {
+    #quote-icon {
+      font-size: 2.75em;
+      margin-right: 25px; } }
+  @media screen and (max-width: 800px) and (orientation: landscape) {
+    #quote-icon {
+      margin-right: 16.66667px; } }
+  @media screen and (max-width: 480px) {
+    #quote-icon {
+      font-size: 2.5em;
+      margin-right: 16.66667px; } }
+  @media screen and (max-width: 640px) and (orientation: landscape) {
+    #quote-icon {
+      font-size: 2.5em;
+      margin-right: 16.66667px; } }
+
+#quote-text {
+  color: #ecc1ac;
+  font-family: "Merriweather", serif;
+  font-size: 1.5em;
+  margin: 0; }
+  @media screen and (max-width: 800px) {
+    #quote-text {
+      font-size: 1.4em; } }
+  @media screen and (max-width: 480px) {
+    #quote-text {
+      font-size: 1.15em; } }
+  @media screen and (max-width: 640px) and (orientation: landscape) {
+    #quote-text {
+      font-size: 1.2em; } }
+
+/*************************************
 SECTIONS: INSTRUCTOR
 *************************************/
-#brian {
-  background: #e8e5e1;
-  border: 3px dashed #817464;
+#instructor {
+  background: #762119 url("../img/debut-light.png") fixed;
+  color: #f4d1cd; }
+  #instructor h2 {
+    color: #e7968e; }
+
+#brian-img {
+  border: 2px dashed #e7968e;
   margin: 0 auto 25px;
   padding: 10px; }
-  @media screen and (max-width: 800px) {
-    #brian {
-      width: 200px; } }
-  @media screen and (max-width: 1024px) and (orientation: landscape) {
-    #brian {
+  @media screen and (max-width: 800px) and (orientation: landscape) {
+    #brian-img {
       width: 200px; } }
   @media screen and (max-width: 480px) {
-    #brian {
+    #brian-img {
       width: 180px; } }
   @media screen and (max-width: 640px) and (orientation: landscape) {
-    #brian {
+    #brian-img {
       width: 180px; } }
+
+#brian-contact {
+  list-style-type: none;
+  margin: 12.5px 0 0;
+  padding: 0; }
+  #brian-contact li:not(:last-child) {
+    margin-bottom: 6.25px; }
+  #brian-contact span {
+    color: #fff;
+    padding-right: 8.33333px;
+    position: relative;
+    top: 2px; }
+  #brian-contact a {
+    color: #e7968e; }
+    #brian-contact a:hover {
+      color: #d95b4f; }
 
 /*************************************
 FOOTER
@@ -710,8 +778,6 @@ FOOTER
     width: 95%;
     color: #fff;
     padding: 0; }
-  .footer .footer-header {
-    text-transform: uppercase; }
   .footer .logos {
     margin: 40px 0; }
     @media screen and (max-width: 800px) {
@@ -750,36 +816,23 @@ FOOTER
 /*************************************
 BACK TO TOP
 *************************************/
-.back-to-top {
+#back-to-top {
+  bottom: 10px;
   display: none;
-  border-radius: 100%;
-  background-color: #564d43;
-  height: 50px;
-  width: 50px;
+  opacity: .7;
   position: fixed;
-  right: 15px;
-  bottom: 15px;
-  opacity: .3;
-  z-index: 9999; }
-  .back-to-top:hover {
-    opacity: .6;
+  right: 15px; }
+  #back-to-top:hover {
     cursor: pointer;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    -webkit-transition: 0.5s;
-    transition: 0.5s; }
-  .back-to-top .glyphicon-chevron-up {
-    font-size: 20px;
-    color: #fff;
-    line-height: 50px;
-    position: relative;
-    left: 16px;
-    top: 0;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    -webkit-transition: 0.5s;
-    transition: 0.5s; }
+    opacity: 1; }
+  #back-to-top span {
+    color: #d5b341;
+    font-size: 30px; }
+    #back-to-top span::after {
+      content: "top";
+      display: block;
+      font-family: "Gloria Hallelujah", cursive;
+      font-size: 20px;
+      margin-top: -15px; }
 
 /*# sourceMappingURL=main.css.map */

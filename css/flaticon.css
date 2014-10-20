@@ -18,12 +18,14 @@
 	margin: 0;
 }
 
-.flaticon-facebook29:before {
+.flaticon-arrow106:before {
 	content: "\e000";
 }
-
-.flaticon-flower87:before {
+.flaticon-facebook29:before {
 	content: "\e001";
+}
+.flaticon-left179:before {
+	content: "\e002";
 }
 
 /* @font-face kit by Fonts2u (http://www.fonts2u.com) */
