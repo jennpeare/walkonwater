@@ -107,13 +107,13 @@ button {
   .postcard figure {
     background-color: #fff;
     box-shadow: 6px 6px 15px rgba(50, 50, 50, 0.75);
+    max-width: 420px;
     padding: 10px;
     -webkit-transform: rotate(5deg);
     -moz-transform: rotate(5deg);
     -o-transform: rotate(5deg);
     -ms-transform: rotate(5deg);
-    transform: rotate(5deg);
-    -webkit-backface-visibility: hidden; }
+    transform: rotate(5deg); }
     @media screen and (max-width: 800px) {
       .postcard figure {
         -webkit-transform: rotate(0deg);
@@ -121,7 +121,6 @@ button {
         -o-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         transform: rotate(0deg);
-        -webkit-backface-visibility: hidden;
         margin: 25px auto; } }
     @media screen and (max-width: 1024px) and (orientation: landscape) {
       .postcard figure {
@@ -130,7 +129,6 @@ button {
         -o-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         transform: rotate(0deg);
-        -webkit-backface-visibility: hidden;
         margin: 25px auto; } }
     .postcard figure::after {
       content: "";
@@ -145,8 +143,7 @@ button {
       -moz-transform: rotate(-25deg);
       -o-transform: rotate(-25deg);
       -ms-transform: rotate(-25deg);
-      transform: rotate(-25deg);
-      -webkit-backface-visibility: hidden; }
+      transform: rotate(-25deg); }
       @media screen and (max-width: 800px) {
         .postcard figure::after {
           -webkit-transform: rotate(0deg);
@@ -154,7 +151,6 @@ button {
           -o-transform: rotate(0deg);
           -ms-transform: rotate(0deg);
           transform: rotate(0deg);
-          -webkit-backface-visibility: hidden;
           top: -10px;
           left: 45%; } }
       @media screen and (max-width: 1024px) and (orientation: landscape) {
@@ -164,7 +160,6 @@ button {
           -o-transform: rotate(0deg);
           -ms-transform: rotate(0deg);
           transform: rotate(0deg);
-          -webkit-backface-visibility: hidden;
           top: -10px;
           left: 45%; } }
   .postcard figcaption {
@@ -185,28 +180,25 @@ button {
     -moz-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);
     -ms-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-    -webkit-backface-visibility: hidden; }
+    transform: rotate(-5deg); }
     @media screen and (max-width: 800px) {
       .reverse figure {
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-backface-visibility: hidden; } }
+        transform: rotate(0deg); } }
     @media screen and (max-width: 1024px) and (orientation: landscape) {
       .reverse figure {
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-backface-visibility: hidden; } }
+        transform: rotate(0deg); } }
     .reverse figure::after {
       display: block;
       position: absolute;
-      left: 390px;
+      left: 380px;
       top: -10px;
       width: 75px;
       height: 30px;
@@ -214,8 +206,7 @@ button {
       -moz-transform: rotate(25deg);
       -o-transform: rotate(25deg);
       -ms-transform: rotate(25deg);
-      transform: rotate(25deg);
-      -webkit-backface-visibility: hidden; }
+      transform: rotate(25deg); }
       @media screen and (max-width: 800px) {
         .reverse figure::after {
           -webkit-transform: rotate(0deg);
@@ -223,7 +214,6 @@ button {
           -o-transform: rotate(0deg);
           -ms-transform: rotate(0deg);
           transform: rotate(0deg);
-          -webkit-backface-visibility: hidden;
           top: -10px;
           left: 42.5%; } }
       @media screen and (max-width: 1024px) and (orientation: landscape) {
@@ -233,7 +223,6 @@ button {
           -o-transform: rotate(0deg);
           -ms-transform: rotate(0deg);
           transform: rotate(0deg);
-          -webkit-backface-visibility: hidden;
           top: -10px;
           left: 42.5%; } }
 
