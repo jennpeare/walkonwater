@@ -713,9 +713,12 @@ SECTIONS: INSTRUCTOR
   #instructor h2 {
     color: #e7968e; }
 
+#cert {
+  margin: 0 auto 25px; }
+
 #brian-img {
-  border: 2px dashed #e7968e;
-  margin: 0 auto 25px;
+  border: 3px dashed #e7968e;
+  margin: 0 auto 12.5px;
   padding: 10px; }
   @media screen and (max-width: 800px) and (orientation: landscape) {
     #brian-img {
