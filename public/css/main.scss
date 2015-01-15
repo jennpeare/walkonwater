@@ -1,0 +1,952 @@
+@import "_variables.scss";
+
+/*************************************
+GENERAL
+*************************************/
+
+html,
+body {
+  height: 100%;
+  font-family: $sans;
+  font-weight: $normal;
+  font-size: 16px;
+
+  @include breakpoint(tablet) {
+    font-size: 14px;
+  }
+  @include breakpoint(tablet, landscape) {
+    font-size: 14px;
+  }
+}
+
+p {
+  font-size: 1em; // 16px
+}
+
+h1 {
+  font-size: 2.25em; // 36px
+
+  @include breakpoint(tablet) {
+    font-size: 2em; // 28px
+  }
+  @include breakpoint(tablet, landscape) {
+    font-size: 2em; // 28px
+  }
+  @include breakpoint(mobile) {
+    font-size: 1.71428em; // 24px
+  }
+  @include breakpoint(mobile, landscape) {
+    font-size: 1.71428em; // 24px
+  }
+}
+
+h2 {
+  font-size: 1.875em; // 30px
+
+  @include breakpoint(tablet) {
+    font-size: 1.71428em; // 24px
+  }
+  @include breakpoint(tablet, landscape) {
+    font-size: 1.71428em; // 24px
+  }
+  @include breakpoint(mobile) {
+    font-size: 1.5em; // 21px
+  }
+  @include breakpoint(mobile, landscape) {
+    font-size: 1.5em; // 21px
+  }
+}
+
+h3 {
+  font-size: 1.5em; // 24px
+
+  @include breakpoint(tablet) {
+    font-size: 1.28571em; // 18px
+  }
+  @include breakpoint(tablet, landscape) {
+    font-size: 1.28571em; // 18px
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: $dark-orange;
+  font-weight: $bold;
+
+  &:hover {
+    color: $orange;
+    text-decoration: none;
+  }
+}
+
+.spacer {
+  margin: $margin-normal auto;
+  text-align: center;
+
+  &::before {
+    content: "\e006\e007\e006";
+    letter-spacing: 10px;
+    color: $dark-red;
+    font-family: "Glyphicons Halflings", serif;
+  }
+}
+
+button {
+  background-color: $red;
+  color: #fff !important;
+  font-size: 1em;
+  font-weight: $normal !important;
+  @include transition;
+
+  &[type="button"]:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  &:hover {
+    background-color: $dark-red;
+    letter-spacing: 5px;
+  }
+}
+
+.postcard {
+  padding: ($padding-normal / 2) 0 ($padding-normal / 2) $padding-normal;
+
+  @include breakpoint(tablet) {
+    padding: 0 ($padding-normal / 2);
+  }
+  @include breakpoint(tablet, landscape) {
+    padding: 0 ($padding-normal / 2);
+  }
+
+  figure {
+    background-color: #fff;
+    box-shadow: 6px 6px 15px rgba(50, 50, 50, 0.75);
+    max-width: 420px;
+    padding: 10px;
+    @include rotate(5deg);
+
+    @include breakpoint(tablet) {
+      @include rotate(0deg);
+      margin: $margin-normal auto;
+    }
+    @include breakpoint(tablet, landscape) {
+      @include rotate(0deg);
+      margin: $margin-normal auto;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -25px;
+      top: -15px;
+      width: 75px;
+      height: 30px;
+      background-color: rgba($dark-yellow, .5);
+      @include rotate(-25deg);
+
+      @include breakpoint(tablet) {
+        @include rotate(0deg);
+        top: -10px;
+        left: 45%;
+      }
+      @include breakpoint(tablet, landscape) {
+        @include rotate(0deg);
+        top: -10px;
+        left: 45%;
+      }
+    }
+  }
+
+  figcaption {
+    font-family: $gloria;
+    padding-top: 10px;
+    text-align: center;
+  }
+}
+
+.reverse  {
+  padding: ($padding-normal / 2) $padding-normal ($padding-normal / 2) 0;
+
+  @include breakpoint(tablet) {
+    padding: 0 ($padding-normal / 2) ($padding-normal / 2);
+  }
+  @include breakpoint(tablet, landscape) {
+    padding: 0 ($padding-normal / 2) ($padding-normal / 2);
+  }
+
+  figure {
+    @include rotate(-5deg);
+
+    @include breakpoint(tablet) {
+      @include rotate(0deg);
+    }
+    @include breakpoint(tablet, landscape) {
+      @include rotate(0deg);
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      left: 380px;
+      top: -10px;
+      width: 75px;
+      height: 30px;
+      @include rotate(25deg);
+
+      @include breakpoint(tablet) {
+        @include rotate(0deg);
+        top: -10px;
+        left: 42.5%;
+      }
+      @include breakpoint(tablet, landscape) {
+        @include rotate(0deg);
+        top: -10px;
+        left: 42.5%;
+      }
+    }
+  }
+}
+
+strong {
+  font-weight: $bold;
+}
+
+/*************************************
+NAVBAR
+*************************************/
+#nav {
+  background-color: $dark-green;
+  border: 0;
+  margin: 0;
+}
+
+.navbar,
+.navbar-header,
+.navbar-brand,
+.nav-link, {
+  margin: 0;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-family: $lobster;
+  font-size: 1.75em; // 28px
+}
+
+.navbar-nav {
+  margin: 0 -15px;
+
+  li a {
+    color: #fff !important;
+    font-size: 0.875em; // 14px
+    font-weight: $normal;
+
+    &:hover, &.active {
+      background: $green !important;
+    }
+  }
+
+  li a.flaticon-facebook29 {
+    font-size: 30px;
+
+    @include breakpoint(tablet) {
+      font-size: 25px;
+    }
+    @include breakpoint(tablet, landscape) {
+      font-size: 25px;
+    }
+
+    &:hover {
+      color: #3b5998 !important; // fb color
+    }
+  }
+}
+
+.navbar-toggle {
+  background-color: $green;
+  border: 0;
+
+  .icon-bar {
+    background-color: #fff !important;
+  }
+
+  &:hover {
+    background-color: #fff !important;
+
+    .icon-bar {
+      background-color: $dark-green !important;
+    }
+  }
+}
+
+.navbar-collapse {
+  background-color: $dark-green;
+  border: 0;
+}
+
+/*************************************
+LANDING PAGE
+*************************************/
+.landing {
+  background: url('../img/bg.jpg') no-repeat fixed center top;
+  background-size: cover;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+
+  @include breakpoint(tablet) {
+    background-attachment: scroll;
+  }
+  @include breakpoint(tablet, landscape) {
+    background-attachment: scroll;
+  }
+
+  @include dark-overlay(.3);
+
+  .container {
+    color: #fff;
+    @include vertical-align;
+  }
+}
+
+#landing-logo {
+  width: 150px;
+
+  @include breakpoint(tablet, landscape) {
+    width: 120px;
+  }
+  @include breakpoint(phablet) {
+    width: 100px;
+  }
+  @include breakpoint(mobile) {
+    width: 80px;
+  }
+  @include breakpoint(mobile, landscape) {
+    width: 70px;
+  }
+}
+
+.landing-header {
+  border-bottom: 4px solid #fff;
+  border-top: 4px solid #fff;
+  opacity: .75;
+  padding: ($padding-normal / 4) 0 ($padding-normal / 2);
+  margin: $margin-normal auto;
+  width: 65%;
+
+  @include breakpoint(tablet) {
+    width: 85%;
+  }
+  @include breakpoint(tablet, landscape) {
+    width: 82.5%;
+  }
+  @include breakpoint(phablet) {
+    padding: ($padding-normal / 8) 0 ($padding-normal / 4);
+    margin: ($margin-normal / 2) auto;
+    width: 65%;
+  }
+  @include breakpoint(mobile) {
+    padding: ($padding-normal / 8) 0 ($padding-normal / 4);
+    width: 95%;
+  }
+
+  #landing-title {
+    font-family: $lobster;
+    font-size: 7em; // 112px
+    line-height: 1.125em;
+    text-shadow: 3px 2px 3px #000;
+    margin: 0;
+
+    @include breakpoint(tablet) {
+      font-size: 6.75em;
+    }
+    @include breakpoint(tablet, landscape) {
+      font-size: 6.75em;
+    }
+    @include breakpoint(phablet) {
+      font-size: 3.5em;
+    }
+    @include breakpoint(mobile) {
+      font-size: 3.15em;
+    }
+    @include breakpoint(mobile, landscape) {
+      font-size: 3.15em;
+    }
+  }
+
+  #landing-subtitle {
+    font-size: 2.25em; // 36px
+    font-variant: small-caps;
+    line-height: 1em;
+    margin: 0;
+
+    @include breakpoint(phablet) {
+      font-size: 1.5em;
+    }
+    @include breakpoint(mobile) {
+      font-size: 1.25em;
+    }
+    @include breakpoint(mobile, landscape) {
+      font-size: 1.25em;
+    }
+
+    &::before,
+    &::after {
+      content: "\e006";
+      color: $dark-red;
+      font-family: "Glyphicons Halflings", serif;
+      font-size: .8em;
+      margin: ($margin-normal / 2);
+      position: relative;
+      top: 3px;
+
+      @include breakpoint(mobile) {
+        margin: ($margin-normal / 4);
+        top: 2px;
+      }
+      @include breakpoint(mobile, landscape) {
+        margin: ($margin-normal / 4);
+        top: 2px;
+      }
+    }
+  }
+}
+
+.landing-intro {
+  p {
+    font-size: 1.5em; // 24px
+    font-weight: $light;
+    opacity: .6;
+    margin: 0 auto $margin-normal;
+
+    @include breakpoint(phablet) {
+      font-size: 1.142857em; // 16px
+      margin: 0 auto ($margin-normal / 2);
+    }
+    @include breakpoint(mobile) {
+      font-size: 1em;
+    }
+    @include breakpoint(mobile, landscape) {
+      font-size: 1em;
+    }
+  }
+
+  #intro-btn {
+    padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: $body-l;
+    width: 25%;
+
+    @include breakpoint(phablet) {
+      font-size: $body-s;
+      padding: 5px 0;
+    }
+    @include breakpoint(mobile) {
+      font-size: $body-s;
+      padding: 5px 0;
+      width: 50%;
+    }
+  }
+}
+
+/*************************************
+SECTIONS
+*************************************/
+
+.section {
+  background: #fff url('../img/sandpaper.png');
+  padding: ($padding-normal * 1.5) 0;
+
+  @include breakpoint(mobile) {
+    padding: $padding-normal 0;
+  }
+  @include breakpoint(mobile, landscape) {
+    padding: $padding-normal 0;
+  }
+
+  h2, h3 {
+    color: $dark-green;
+    font-weight: $light;
+  }
+
+  h2:not(:first-child),
+  h3:not(:first-child) {
+    margin: $margin-normal 0 ($margin-normal / 2);
+  }
+}
+
+.header {
+  margin: 0 auto ($margin-normal * 3);
+  position: relative;
+  text-align: center;
+  width: 80%;
+  z-index: $z-index-header;
+
+  @include breakpoint(mobile) {
+    width: 95%;
+    margin: 0 auto ($margin-normal * 1.5);
+  }
+  @include breakpoint(mobile, landscape) {
+    width: 95%;
+    margin: 0 auto ($margin-normal * 1.5);
+  }
+
+  .banner {
+    background: $lighter-brown;
+    box-shadow: 0 0 0 6px $lighter-brown, 2px 2px 5px 5px rgba(#000, .6);
+    border-top: 1px dashed rgba($brown, 0.5);
+    border-bottom: 1px dashed rgba($brown, 0.5);
+    height: 70px;
+    position: relative;
+    padding: 3px 0;
+    z-index: $z-index-banner;
+
+    @include breakpoint(tablet) {
+      height: 50px;
+    }
+    @include breakpoint(tablet, landscape) {
+      height: 50px;
+    }
+    @include breakpoint(mobile) {
+      border-radius: 5px;
+    }
+    @include breakpoint(mobile, landscape) {
+      border-radius: 5px;
+    }
+  }
+
+  &::before,
+  &::after {
+    bottom: -15px;
+    border: 35px solid darken($lighter-brown, 5%);
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: $z-index-banner-tip;
+
+    @include breakpoint(tablet) {
+      border: 30px solid darken($lighter-brown, 5%);
+    }
+    @include breakpoint(tablet, landscape) {
+      border: 30px solid darken($lighter-brown, 5%);
+    }
+    @include breakpoint(mobile) {
+      display: none;
+    }
+    @include breakpoint(mobile, landscape) {
+      display: none;
+    }
+  }
+
+  &::before {
+    left: -70px;
+    border-right-width: 45px;
+    border-left-color: transparent;
+  }
+
+  &::after {
+    right: -70px;
+    border-left-width: 45px;
+    border-right-color: transparent;
+  }
+
+  h1 {
+    color: $brown;
+    font-family: $lobster;
+    line-height: 60px;
+
+    @include breakpoint(tablet) {
+      line-height: 40px;
+    }
+    @include breakpoint(tablet, landscape) {
+      line-height: 40px;
+    }
+  }
+
+  h1::before, h1::after {
+    content: "e";
+    color: $dark-red;
+    font-family: "Hibiscus", serif;
+    margin: 0 15px;
+
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+}
+
+.description p {
+  font-family: $serif;
+  font-size: $body-l;
+  font-weight: $normal;
+  margin: ($margin-normal / 2) 0 0;
+  line-height: $body-l * 1.5;
+
+  @include breakpoint(mobile) {
+    font-size: 1em; // 14px
+  }
+  @include breakpoint(mobile, landscape) {
+    font-size: 1em; // 14px
+  }
+}
+
+.small p {
+  font-size: default;
+}
+
+/* class table */
+.class-group {
+  margin-top: 20px;
+}
+
+// class name
+.class-heading {
+  background-color: $dark-brown;
+  border-radius: 15px 15px 0 0;
+  color: #fff;
+  font-size: $body-l;
+  font-weight: $bold;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+// class description
+.class-desc {
+  background: $lighter-brown;
+  border-left: 2px solid $brown;
+  border-right: 2px solid $brown;
+  border-bottom: 1px dashed $light-brown;
+  font-size: $body-s;
+  margin: 0;
+  padding: 15px;
+}
+
+// class information
+.class-info {
+  font-size: $body-s;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: block;
+    background: $lighter-brown;
+    border-top: 1px dashed $light-brown;
+    border-left: 2px solid $brown;
+    border-right: 2px solid $brown;
+    padding: 15px;
+
+    &:first-child {
+      border-top: 0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 15px 15px;
+      border-bottom: 2px solid $brown;
+    }
+
+    span.glyphicon {
+      font-size: 1.25em;
+      margin: 3px 12px 0 0;
+    }
+
+    p {
+      line-height: 1.25em;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    .register-btn {
+      display: block;
+      margin: 0 auto;
+      width: 90%;
+    }
+  }
+}
+
+/*************************************
+SECTIONS: PADDLEBOARD
+*************************************/
+
+#paddleboard {
+  background: url('../img/brown-flower.png') fixed;
+  padding: ($padding-normal / 1.5) 0;
+}
+
+#paddleboard-img {
+  width: 300px;
+  margin-left: -15px;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
+  @include breakpoint(tablet, landscape) {
+    display: none;
+  }
+}
+
+#paddleboard-text {
+  height: 148px;
+
+  @include breakpoint(tablet) {
+    height: 85px;
+  }
+  @include breakpoint(tablet, landscape) {
+    height: 50px;
+  }
+  @include breakpoint(phablet) {
+    height: 40px;
+  }
+  @include breakpoint(mobile) {
+    height: 60px;
+  }
+  @include breakpoint(mobile, landscape) {
+    height: 30px;
+  }
+
+  p {
+    @include vertical-align;
+    color: #fff;
+    font-size: 2.125em; // 34px
+    letter-spacing: -2px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include breakpoint(phablet) {
+      font-size: 1.85em;
+    }
+    @include breakpoint(mobile) {
+      letter-spacing: -1px;
+      font-size: 1.42857em; // 20px
+    }
+    @include breakpoint(mobile, landscape) {
+      letter-spacing: -1px;
+      font-size: 1.4em; // 19.6px
+    }
+
+    strong {
+      color: $dark-green;
+    }
+  }
+}
+
+/*************************************
+SECTIONS: QUOTE
+*************************************/
+#quote {
+  background: $dark-orange;
+  padding: ($padding-normal / 1.5) 0;
+}
+
+#quote-icon {
+  color: #fff;
+  float: left;
+  font-size: 3em;
+  margin-right: ($margin-normal * 1.5);
+
+  @include breakpoint(tablet) {
+    font-size: 2.75em;
+    margin-right: $margin-normal;
+  }
+  @include breakpoint(tablet, landscape) {
+    font-size: 2.75em;
+    margin-right: $margin-normal;
+  }
+  @include breakpoint(phablet) {
+    margin-right: $margin-normal / 1.5;
+  }
+  @include breakpoint(mobile) {
+    font-size: 2.5em;
+    margin-right: $margin-normal / 1.5;
+  }
+  @include breakpoint(mobile, landscape) {
+    font-size: 2.5em;
+    margin-right: $margin-normal / 1.5;
+  }
+}
+
+#quote-text {
+  color: $light-orange;
+  font-family: $serif;
+  font-size: 1.5em;
+  margin: 0;
+
+  @include breakpoint(tablet) {
+    font-size: 1.4em;
+  }
+  @include breakpoint(mobile) {
+    font-size: 1.15em;
+  }
+  @include breakpoint(mobile, landscape) {
+    font-size: 1.2em;
+  }
+}
+
+/*************************************
+SECTIONS: INSTRUCTOR
+*************************************/
+#instructor {
+  background: $darker-red url('../img/debut-light.png') fixed;
+  color: $lighter-red;
+
+  h2 {
+    color: $light-red;
+  }
+}
+
+#cert {
+  margin: 0 auto $margin-normal;
+}
+
+#brian-img {
+  border: 3px dashed $light-red;
+  margin: 0 auto ($margin-normal / 2);
+  padding: 10px;
+
+  @include breakpoint(phablet) {
+    width: 200px;
+  }
+  @include breakpoint(mobile) {
+    width: 180px;
+  }
+  @include breakpoint(mobile, landscape) {
+    width: 180px;
+  }
+}
+
+#brian-contact {
+  list-style-type: none;
+  margin: ($margin-normal / 2) 0 0;
+  padding: 0;
+
+  li:not(:last-child) {
+    margin-bottom: ($margin-normal / 4);
+  }
+
+  span {
+    color: #fff;
+    padding-right: ($padding-normal / 6);
+    position: relative;
+    top: 2px;
+  }
+
+  a {
+    color: $light-red;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+/*************************************
+FOOTER
+*************************************/
+
+.footer {
+  background: $brown url('../img/footer.jpg') no-repeat fixed left top;
+  background-size: cover;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+
+  @include breakpoint(tablet) {
+    background-attachment: scroll;
+  }
+  @include breakpoint(tablet, landscape) {
+    background-attachment: scroll;
+  }
+
+  @include dark-overlay(.65);
+
+  .container {
+    width: 95%;
+    color: #fff;
+    padding: 0;
+  }
+
+  .logos {
+    margin: ($padding-normal - 10) 0;
+
+    @include breakpoint(tablet) {
+      margin: ($padding-normal / 2) 0;
+    }
+    @include breakpoint(mobile) {
+      margin: ($padding-normal / 4) 0;
+    }
+    @include breakpoint(mobile, landscape) {
+      margin: ($padding-normal / 4) 0;
+    }
+  }
+
+  .company-logo {
+    margin: 10px;
+    height: 100px;
+
+    @include breakpoint(tablet) {
+      height: 90px;
+    }
+    @include breakpoint(phablet) {
+      height: 90px;
+    }
+    @include breakpoint(mobile) {
+      height: 75px;
+    }
+    @include breakpoint(mobile, landscape) {
+      height: 75px;
+    }
+  }
+}
+
+#copyright {
+  font-size: $body-s;
+  text-align: center;
+
+  .credits {
+    font-size: $body-s;
+    font-weight: $light;
+    opacity: .5;
+  }
+}
+
+/*************************************
+BACK TO TOP
+*************************************/
+
+#back-to-top {
+  bottom: 10px;
+  display: none;
+  opacity: .7;
+  position: fixed;
+  right: 15px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  span {
+    color: $darker-yellow;
+    font-size: 30px;
+
+    &::after {
+      content: "top";
+      display: block;
+      font-family: $gloria;
+      font-size: 20px;
+      margin-top: -15px;
+    }
+  }
+}
