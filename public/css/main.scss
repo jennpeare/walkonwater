@@ -115,19 +115,21 @@ button {
 }
 
 .postcard {
-  padding: ($padding-normal / 2) 0 ($padding-normal / 2) $padding-normal;
+  padding: ($padding-normal / 2) $padding-normal 0;
 
   @include breakpoint(tablet) {
-    padding: 0 ($padding-normal / 2);
+    padding: 0 ($padding-normal / 2) ($padding-normal / 4);
   }
   @include breakpoint(tablet, landscape) {
-    padding: 0 ($padding-normal / 2);
+    padding: 0 ($padding-normal / 2) ($padding-normal / 4);
   }
 
   figure {
     background-color: #fff;
     box-shadow: 6px 6px 15px rgba(50, 50, 50, 0.75);
+    margin-top: $margin-normal;
     max-width: 420px;
+    max-height: 420px;
     padding: 10px;
     @include rotate(5deg);
 
@@ -154,12 +156,12 @@ button {
       @include breakpoint(tablet) {
         @include rotate(0deg);
         top: -10px;
-        left: 45%;
+        left: 40%;
       }
       @include breakpoint(tablet, landscape) {
         @include rotate(0deg);
         top: -10px;
-        left: 45%;
+        left: 40%;
       }
     }
   }
@@ -172,13 +174,13 @@ button {
 }
 
 .reverse  {
-  padding: ($padding-normal / 2) $padding-normal ($padding-normal / 2) 0;
+  padding: ($padding-normal / 2) $padding-normal 0;
 
   @include breakpoint(tablet) {
-    padding: 0 ($padding-normal / 2) ($padding-normal / 2);
+    padding: 0 ($padding-normal / 2) ($padding-normal / 4);
   }
   @include breakpoint(tablet, landscape) {
-    padding: 0 ($padding-normal / 2) ($padding-normal / 2);
+    padding: 0 ($padding-normal / 2) ($padding-normal / 4);
   }
 
   figure {
@@ -194,7 +196,7 @@ button {
     &::after {
       display: block;
       position: absolute;
-      left: 380px;
+      left: 87%;
       top: -10px;
       width: 75px;
       height: 30px;
@@ -203,12 +205,12 @@ button {
       @include breakpoint(tablet) {
         @include rotate(0deg);
         top: -10px;
-        left: 42.5%;
+        left: 40%;
       }
       @include breakpoint(tablet, landscape) {
         @include rotate(0deg);
         top: -10px;
-        left: 42.5%;
+        left: 40%;
       }
     }
   }
@@ -216,6 +218,10 @@ button {
 
 strong {
   font-weight: $bold;
+}
+
+.alert {
+  margin: 15px 0;
 }
 
 /*************************************
@@ -485,7 +491,7 @@ SECTIONS
 }
 
 .header {
-  margin: 0 auto ($margin-normal * 3);
+  margin: 0 auto ($margin-normal * 2);
   position: relative;
   text-align: center;
   width: 80%;
@@ -603,75 +609,182 @@ SECTIONS
   font-size: default;
 }
 
+/*************************************
+SECTIONS: ROSWELL
+*************************************/
+.register-btn {
+  padding: 10px 0;
+  margin: 10px;
+  font-size: $body-l;
+  width: 30%;
+
+  @include breakpoint(tablet) {
+    width: 40%;
+  }
+  @include breakpoint(tablet, landscape) {
+    width: 40%;
+  }
+  @include breakpoint(mobile) {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+  }
+  @include breakpoint(mobile, landscape) {
+    display: block;
+    width: 65%;
+    margin: 10px auto;
+  }
+}
+
+#calendar-btn {
+  display: block;
+  font-size: $body-l;
+  padding: 10px 0;
+  margin: ($margin-normal / 2) auto;
+  width: 40%;
+
+  @include breakpoint(mobile) {
+    width: 90%;
+  }
+  @include breakpoint(mobile, landscape) {
+    width: 65%;
+  }
+}
+
 /* class table */
-.class-group {
-  margin-top: 20px;
+.course-group {
+  display: table;
+  background: $lighter-brown;
+  border-radius: 15px;
+  border-collapse: collapse;
+  box-shadow: 0 2px 0 rgba(50, 50, 50, 0.1);
+  font-size: $body-s;
+  margin-top: $margin-normal;
+  min-height: 320px;
+  position: relative;
+
+  @include breakpoint(tablet) {
+    min-height: 0;
+  }
+  @include breakpoint(mobile) {
+    min-height: 0;
+  }
+  @include breakpoint(mobile, landscape) {
+    min-height: 0;
+  }
 }
 
 // class name
-.class-heading {
+.course-name {
   background-color: $dark-brown;
-  border-radius: 15px 15px 0 0;
-  color: #fff;
+  border-radius: 14px 14px 0 0;
+  display: table-row;
   font-size: $body-l;
   font-weight: $bold;
-  margin: 0;
-  padding: 10px;
   text-align: center;
+  color: #fff;
+  left: 0;
+  padding: 15px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 // class description
-.class-desc {
-  background: $lighter-brown;
-  border-left: 2px solid $brown;
-  border-right: 2px solid $brown;
-  border-bottom: 1px dashed $light-brown;
-  font-size: $body-s;
-  margin: 0;
-  padding: 15px;
+.course-desc {
+  display: table-cell;
+  width: 50%;
+
+  @include breakpoint(mobile) {
+    display: table-row;
+  }
+
+  p {
+    padding: 15px;
+    margin: 0;
+
+    @include breakpoint(mobile) {
+      padding-top: 63px;
+    }
+  }
+
 }
 
-// class information
-.class-info {
-  font-size: $body-s;
-  padding: 0;
-  margin: 0;
+// class info
+.course-info {
+  display: table-cell;
+  padding: 55px 15px 15px 0;
+  width: 50%;
 
-  li {
+  @include breakpoint(mobile) {
+    display: table-row;
+  }
+
+  // class info > info row
+  .info-row {
     display: block;
-    background: $lighter-brown;
-    border-top: 1px dashed $light-brown;
-    border-left: 2px solid $brown;
-    border-right: 2px solid $brown;
-    padding: 15px;
 
-    &:first-child {
+    &:not(:first-child) {
+      border-top: 1px dashed $light-brown;
+    }
+
+    @include breakpoint(mobile) {
+      margin: 0 15px;
+      border-top: 1px dashed $light-brown;
+    }
+  }
+
+  // class info > info row > icon
+  .glyphicon {
+    display: table-cell;
+    vertical-align: top;
+    font-size: 1.2em;
+    padding: 10px 10px 0 0;
+  }
+
+  // class info > info row > info
+  .info {
+    display: table-cell;
+    padding: 7px 0;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* alternate design */
+.course-alt {
+
+  &.course-group {
+    display: block;
+    width: 100%;
+    min-height: 100px;
+  }
+
+  .course-desc {
+    display: block;
+    width: 100%;
+    padding: 63px 15px 15px;
+  }
+
+  .course-info {
+    display: block;
+    width: 100%;
+    padding: 55px 15px 15px;
+
+    @include breakpoint(mobile) {
+      margin: 0;
+      padding: 55px 0 15px;
+    }
+
+    .info-row:first-child {
       border-top: 0;
     }
+  }
 
-    &:last-child {
-      border-radius: 0 0 15px 15px;
-      border-bottom: 2px solid $brown;
-    }
-
-    span.glyphicon {
-      font-size: 1.25em;
-      margin: 3px 12px 0 0;
-    }
-
-    p {
-      line-height: 1.25em;
-
-      &:last-child {
-        margin: 0;
-      }
-    }
-
-    .register-btn {
-      display: block;
-      margin: 0 auto;
-      width: 90%;
-    }
+  button {
+    margin-top: 15px;
   }
 }
 

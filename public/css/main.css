@@ -97,17 +97,19 @@ button {
     letter-spacing: 5px; }
 
 .postcard {
-  padding: 25px 0 25px 50px; }
+  padding: 25px 50px 0; }
   @media screen and (max-width: 800px) {
     .postcard {
-      padding: 0 25px; } }
+      padding: 0 25px 12.5px; } }
   @media screen and (max-width: 1024px) and (orientation: landscape) {
     .postcard {
-      padding: 0 25px; } }
+      padding: 0 25px 12.5px; } }
   .postcard figure {
     background-color: #fff;
     box-shadow: 6px 6px 15px rgba(50, 50, 50, 0.75);
+    margin-top: 25px;
     max-width: 420px;
+    max-height: 420px;
     padding: 10px;
     -webkit-transform: rotate(5deg);
     -moz-transform: rotate(5deg);
@@ -152,7 +154,7 @@ button {
           -ms-transform: rotate(0deg);
           transform: rotate(0deg);
           top: -10px;
-          left: 45%; } }
+          left: 40%; } }
       @media screen and (max-width: 1024px) and (orientation: landscape) {
         .postcard figure::after {
           -webkit-transform: rotate(0deg);
@@ -161,20 +163,20 @@ button {
           -ms-transform: rotate(0deg);
           transform: rotate(0deg);
           top: -10px;
-          left: 45%; } }
+          left: 40%; } }
   .postcard figcaption {
     font-family: "Gloria Hallelujah", cursive;
     padding-top: 10px;
     text-align: center; }
 
 .reverse {
-  padding: 25px 50px 25px 0; }
+  padding: 25px 50px 0; }
   @media screen and (max-width: 800px) {
     .reverse {
-      padding: 0 25px 25px; } }
+      padding: 0 25px 12.5px; } }
   @media screen and (max-width: 1024px) and (orientation: landscape) {
     .reverse {
-      padding: 0 25px 25px; } }
+      padding: 0 25px 12.5px; } }
   .reverse figure {
     -webkit-transform: rotate(-5deg);
     -moz-transform: rotate(-5deg);
@@ -198,7 +200,7 @@ button {
     .reverse figure::after {
       display: block;
       position: absolute;
-      left: 380px;
+      left: 87%;
       top: -10px;
       width: 75px;
       height: 30px;
@@ -215,7 +217,7 @@ button {
           -ms-transform: rotate(0deg);
           transform: rotate(0deg);
           top: -10px;
-          left: 42.5%; } }
+          left: 40%; } }
       @media screen and (max-width: 1024px) and (orientation: landscape) {
         .reverse figure::after {
           -webkit-transform: rotate(0deg);
@@ -224,10 +226,13 @@ button {
           -ms-transform: rotate(0deg);
           transform: rotate(0deg);
           top: -10px;
-          left: 42.5%; } }
+          left: 40%; } }
 
 strong {
   font-weight: 600; }
+
+.alert {
+  margin: 15px 0; }
 
 /*************************************
 NAVBAR
@@ -450,7 +455,7 @@ SECTIONS
     margin: 25px 0 12.5px; }
 
 .header {
-  margin: 0 auto 75px;
+  margin: 0 auto 50px;
   position: relative;
   text-align: center;
   width: 80%;
@@ -546,56 +551,139 @@ SECTIONS
 .small p {
   font-size: default; }
 
-/* class table */
-.class-group {
-  margin-top: 20px; }
+/*************************************
+SECTIONS: ROSWELL
+*************************************/
+.register-btn {
+  padding: 10px 0;
+  margin: 10px;
+  font-size: 1.125em;
+  width: 30%; }
+  @media screen and (max-width: 800px) {
+    .register-btn {
+      width: 40%; } }
+  @media screen and (max-width: 1024px) and (orientation: landscape) {
+    .register-btn {
+      width: 40%; } }
+  @media screen and (max-width: 480px) {
+    .register-btn {
+      display: block;
+      width: 90%;
+      margin: 10px auto; } }
+  @media screen and (max-width: 640px) and (orientation: landscape) {
+    .register-btn {
+      display: block;
+      width: 65%;
+      margin: 10px auto; } }
 
-.class-heading {
+#calendar-btn {
+  display: block;
+  font-size: 1.125em;
+  padding: 10px 0;
+  margin: 12.5px auto;
+  width: 40%; }
+  @media screen and (max-width: 480px) {
+    #calendar-btn {
+      width: 90%; } }
+  @media screen and (max-width: 640px) and (orientation: landscape) {
+    #calendar-btn {
+      width: 65%; } }
+
+/* class table */
+.course-group {
+  display: table;
+  background: #e8e5e1;
+  border-radius: 15px;
+  border-collapse: collapse;
+  box-shadow: 0 2px 0 rgba(50, 50, 50, 0.1);
+  font-size: 0.875em;
+  margin-top: 25px;
+  min-height: 320px;
+  position: relative; }
+  @media screen and (max-width: 800px) {
+    .course-group {
+      min-height: 0; } }
+  @media screen and (max-width: 480px) {
+    .course-group {
+      min-height: 0; } }
+  @media screen and (max-width: 640px) and (orientation: landscape) {
+    .course-group {
+      min-height: 0; } }
+
+.course-name {
   background-color: #564d43;
-  border-radius: 15px 15px 0 0;
-  color: #fff;
+  border-radius: 14px 14px 0 0;
+  display: table-row;
   font-size: 1.125em;
   font-weight: 600;
-  margin: 0;
-  padding: 10px;
-  text-align: center; }
+  text-align: center;
+  color: #fff;
+  left: 0;
+  padding: 15px 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }
 
-.class-desc {
-  background: #e8e5e1;
-  border-left: 2px solid #817464;
-  border-right: 2px solid #817464;
-  border-bottom: 1px dashed #a69a8c;
-  font-size: 0.875em;
-  margin: 0;
-  padding: 15px; }
+.course-desc {
+  display: table-cell;
+  width: 50%; }
+  @media screen and (max-width: 480px) {
+    .course-desc {
+      display: table-row; } }
+  .course-desc p {
+    padding: 15px;
+    margin: 0; }
+    @media screen and (max-width: 480px) {
+      .course-desc p {
+        padding-top: 63px; } }
 
-.class-info {
-  font-size: 0.875em;
-  padding: 0;
-  margin: 0; }
-  .class-info li {
-    display: block;
-    background: #e8e5e1;
-    border-top: 1px dashed #a69a8c;
-    border-left: 2px solid #817464;
-    border-right: 2px solid #817464;
-    padding: 15px; }
-    .class-info li:first-child {
-      border-top: 0; }
-    .class-info li:last-child {
-      border-radius: 0 0 15px 15px;
-      border-bottom: 2px solid #817464; }
-    .class-info li span.glyphicon {
-      font-size: 1.25em;
-      margin: 3px 12px 0 0; }
-    .class-info li p {
-      line-height: 1.25em; }
-      .class-info li p:last-child {
-        margin: 0; }
-    .class-info li .register-btn {
-      display: block;
-      margin: 0 auto;
-      width: 90%; }
+.course-info {
+  display: table-cell;
+  padding: 55px 15px 15px 0;
+  width: 50%; }
+  @media screen and (max-width: 480px) {
+    .course-info {
+      display: table-row; } }
+  .course-info .info-row {
+    display: block; }
+    .course-info .info-row:not(:first-child) {
+      border-top: 1px dashed #a69a8c; }
+    @media screen and (max-width: 480px) {
+      .course-info .info-row {
+        margin: 0 15px;
+        border-top: 1px dashed #a69a8c; } }
+  .course-info .glyphicon {
+    display: table-cell;
+    vertical-align: top;
+    font-size: 1.2em;
+    padding: 10px 10px 0 0; }
+  .course-info .info {
+    display: table-cell;
+    padding: 7px 0; }
+    .course-info .info p:last-child {
+      margin-bottom: 0; }
+
+/* alternate design */
+.course-alt.course-group {
+  display: block;
+  width: 100%;
+  min-height: 100px; }
+.course-alt .course-desc {
+  display: block;
+  width: 100%;
+  padding: 63px 15px 15px; }
+.course-alt .course-info {
+  display: block;
+  width: 100%;
+  padding: 55px 15px 15px; }
+  @media screen and (max-width: 480px) {
+    .course-alt .course-info {
+      margin: 0;
+      padding: 55px 0 15px; } }
+  .course-alt .course-info .info-row:first-child {
+    border-top: 0; }
+.course-alt button {
+  margin-top: 15px; }
 
 /*************************************
 SECTIONS: PADDLEBOARD
