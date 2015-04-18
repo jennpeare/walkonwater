@@ -660,7 +660,7 @@ SECTIONS: ROSWELL
   box-shadow: 0 2px 0 rgba(50, 50, 50, 0.1);
   font-size: $body-s;
   margin-top: $margin-normal;
-  min-height: 320px;
+  min-height: 350px;
   position: relative;
 
   @include breakpoint(tablet) {

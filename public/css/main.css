@@ -598,7 +598,7 @@ SECTIONS: ROSWELL
   box-shadow: 0 2px 0 rgba(50, 50, 50, 0.1);
   font-size: 0.875em;
   margin-top: 25px;
-  min-height: 320px;
+  min-height: 350px;
   position: relative; }
   @media screen and (max-width: 800px) {
     .course-group {
